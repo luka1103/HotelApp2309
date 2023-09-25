@@ -1,0 +1,1 @@
+print("Welkome bij onze hotel!")
