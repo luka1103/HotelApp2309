@@ -15,10 +15,10 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 def helloWorld():
     return "Hello, cross-origin-world!"
 
-@app.route("/felix")
+@app.route("/felix/<eengegeven>")
 @cross_origin()
-def methodefelix():
-    return felixprobeersels.functiefelix()
+def methodefelix(eengegeven):
+    return felixprobeersels.functiefelix(eengegeven)
 
 @app.route("/luka")
 @cross_origin()
