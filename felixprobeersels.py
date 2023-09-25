@@ -20,22 +20,17 @@ def functiefelix2Netter(deparameter):
 #    bestand = pandas.read_csv("csvfiles/EtenDrinken.csv",sep=';',encoding='latin-1')
     bestand = pandas.read_csv("csvfiles/MARKTEN.csv",sep=';')
 #    bestand = pandas.read_csv("csvfiles/MuseaGalleries2.csv",sep=';', encoding='latin-1')
-    print(type(bestand))
-    print(bestand.columns)
-    print(bestand)
-    leegDataframe = pandas.DataFrame()
-    for i, ad in bestand.iterrows():
-#    for ad in bestand["Adres"]:
-        if ad["Locatie"] == deparameter:
-            print("YES HIJ KOMT HIER")
-        else:
-            bestand.drop(i, inplace=True)
+    leegDataframe = pandas.DataFrame(data=None, columns=bestand.columns, index=bestand.index).head(0)
+    tekopieren = []
 
-    print(leegDataframe)
-    result = bestand.to_json(orient="records")
+    for i, ad in bestand.iterrows():
+        if ad["Locatie"].find(deparameter) > -1:
+            tekopieren.append(i)
+
+    leegDataframe = bestand.loc[tekopieren].copy()  
+    result = leegDataframe.to_json(orient="records")
     parsed = loads(result)
     return dumps(parsed, indent=4) 
-    #return "return van felix functie"
 
 
-print(functiefelix("Waterlooplein"))
+print(functiefelix2Netter("Waterloo"))
