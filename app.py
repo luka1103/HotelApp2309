@@ -23,14 +23,15 @@ def methodefelix():
 @app.route("/luka")
 @cross_origin()
 def methodeluka():
-    return felixprobeersels.functieluka()
+    return lukaprobeersels.functieluka()
 
 @app.route("/jeroen")
 @cross_origin()
 def methodejeroen():
-    return felixprobeersels.jeroenfunctie()
+    return jeroenprobeer.jeroenfunctie()
 
 @app.route("/zaid")
 @cross_origin()
 def methodezaid():
-    return felixprobeersels.functiezaid()
+    return zaidtest.functiezaid()
+
