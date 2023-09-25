@@ -1,6 +1,9 @@
 from flask import Flask
 from flask_cors import CORS, cross_origin
 import felixprobeersels
+import lukaprobeersels
+import jeroenprobeer
+import zaidtest
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -16,3 +19,19 @@ def helloWorld():
 @cross_origin()
 def methodefelix():
     return felixprobeersels.functiefelix()
+
+@app.route("/luka")
+@cross_origin()
+def methodeluka():
+    return lukaprobeersels.functieluka()
+
+@app.route("/jeroen")
+@cross_origin()
+def methodejeroen():
+    return jeroenprobeer.jeroenfunctie()
+
+@app.route("/zaid")
+@cross_origin()
+def methodezaid():
+    return zaidtest.functiezaid()
+
