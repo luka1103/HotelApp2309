@@ -11,7 +11,7 @@ import folium
 def marktKaart():
    keys = ('Latitude','Longitude')
    records = [ ]
-   bestand = pd.read_csv("MARKTEN.csv", sep=",", encoding="latin-1")
+   bestand = pd.read_csv("csvfiles/MARKTEN_NEW.csv", sep=",", encoding="latin-1")
    data = bestand.to_dict(orient='records')
    print(bestand)
    museum_map = folium.Map(location=[52.377956, 4.897070], zoom_start=10)
@@ -27,9 +27,6 @@ def marktKaart():
         tooltip = f'Artikelen: {Artikelen} <br> Geopend op de volgende dagen: {Dagen}'
 
         folium.Marker([latitude, longitude], tooltip=tooltip).add_to(museum_map)
-        museum_map.save('museum_map.html') 
+        museum_map.save('markten_kaart.html') 
         
-   #for row in data:
-        #records.append({key:row[key] for key in keys})
-        #print(records[0])
 marktKaart()
