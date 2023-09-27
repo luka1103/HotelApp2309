@@ -34,4 +34,3 @@ def methodejeroen(mijngegeven):
 @cross_origin()
 def methodezaid():
     return zaidtest.functiezaid()
-

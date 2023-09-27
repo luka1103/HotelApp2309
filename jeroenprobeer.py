@@ -4,6 +4,7 @@ from json import loads, dumps
 def jeroenfunctie(stad):
 
   bestand = pd.read_csv("csvfiles/EtenDrinken.csv", sep=";", encoding='latin-1')
+
   legelijst = []
 
   for i, ad in bestand.iterrows():
