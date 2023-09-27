@@ -23,3 +23,4 @@ rating_treshold = 4.0
 city_counts = restaurantNumbers("/Users/jeroenhadderingh/Desktop/hotelapp2309/HotelApp2309/csvfiles/TA_restaurants_curated.csv", rating_treshold)
 print(f"Highly rated City Counts (rating > {rating_treshold}):")
 print(city_counts)
+
