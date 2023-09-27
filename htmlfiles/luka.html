@@ -1,0 +1,43 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<script>
+    function ophalen(){
+        var gebruikers_input = document.getElementById("gebruikers_input").value;
+        fetch("http://127.0.0.1:5000/luka/" + gebruikers_input)
+        .then(r => r.json())
+        .then(d => gadoen(d))
+    }
+    function gadoen(dedata){
+        document.getElementById("resultaat").innerHTML = ""
+        console.log(dedata);
+        for(x = 0; x< dedata.length; x++){
+            document.getElementById("resultaat").innerHTML += "<br>"+ dedata[x].Locatie;
+        }
+    }
+</script>
+
+<h2>Markten Amsterdam</h1>
+
+<br>
+<label for="gebruikers_input">Kies het soort markt:</label><br>
+<select id="gebruikers_input" name="gebruikers_input">
+  <option value="Algemene waren">Algemene waren</option>
+  <option value="Kunst">Kunst / Antiek en curiosa</option>
+  <option value="Boerenmarkt">Boerenmarkt / Bioversmarkt</option>
+  <option value="Boeken">Boeken</option>
+  <option value="Postzegels en munten">Postzegels en munten</option>
+  <option value="Bloemen en planten">Bloemen en planten</option>
+</select>
+
+<br><br>
+<button onclick="ophalen()" type="button" class="btn btn-outline-success">Zoeken</button><br><br>
+
+<b>Locaties:</b>
+<div id="resultaat"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
