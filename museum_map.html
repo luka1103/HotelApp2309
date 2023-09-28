@@ -1,0 +1,2379 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_94701949f0432b53f260487c2786d403 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_94701949f0432b53f260487c2786d403" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_94701949f0432b53f260487c2786d403 = L.map(
+                "map_94701949f0432b53f260487c2786d403",
+                {
+                    center: [52.377956, 4.89707],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c41c889c8accf2eca1ec2026046bb1e2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            var marker_4e32f7bd861a112a8ac3ac28d0d394e4 = L.marker(
+                [52.375899, 4.89662],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_4e32f7bd861a112a8ac3ac28d0d394e4.bindTooltip(
+                `<div>
+                     Museum of Medieval Torture Instruments, Damrak 33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_413b2fa4de1eb88c2134a61a7caf7e4d = L.marker(
+                [52.375658, 4.880696],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_413b2fa4de1eb88c2134a61a7caf7e4d.bindTooltip(
+                `<div>
+                     Electric Ladyland / Fluorescent Art Museum, Tweede Leliedwarsstraat 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_850e0210d563780d005ff0e0e651a8f4 = L.marker(
+                [52.349378, 4.856705],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_850e0210d563780d005ff0e0e651a8f4.bindTooltip(
+                `<div>
+                     Electrische Museumtramlijn, Amstelveenseweg 264
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ce1732464824b9c4d9d04046f9be3b8 = L.marker(
+                [52.368024, 4.910852],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_8ce1732464824b9c4d9d04046f9be3b8.bindTooltip(
+                `<div>
+                     De Burcht/ Nationaal Vakbondsmuseum, Henri Polaklaan 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e336e2028e748f58ef8109991a9e302e = L.marker(
+                [52.375218, 4.89596],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_e336e2028e748f58ef8109991a9e302e.bindTooltip(
+                `<div>
+                     Amsterdam Conference Centre Beurs van Berlage, Damrak 243
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3dbc134741a63801987c14bfe4483ea = L.marker(
+                [52.370415, 4.891297],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_c3dbc134741a63801987c14bfe4483ea.bindTooltip(
+                `<div>
+                     Amsterdam Museum, Kalverstraat  92
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1ae293a3d3fcf9ee0672cddfe2b929f = L.marker(
+                [52.375106, 4.897789],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_e1ae293a3d3fcf9ee0672cddfe2b929f.bindTooltip(
+                `<div>
+                     Appie Baantjer Museum, Warmoesstraat  66
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82ac5decb1bb29d6d774bba03f885432 = L.marker(
+                [52.385337, 4.891909],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_82ac5decb1bb29d6d774bba03f885432.bindTooltip(
+                `<div>
+                     Architectuurcentrum Amsterdam, Prins Hendrikkade  600
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1199330ab4a1a10de256425845155e1 = L.marker(
+                [52.368534, 4.886355],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_b1199330ab4a1a10de256425845155e1.bindTooltip(
+                `<div>
+                     Bijbels Museum, Herengracht 366-368
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_591c56a5f08b47335958a4caf1fa3f6a = L.marker(
+                [52.376381, 4.884267],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_591c56a5f08b47335958a4caf1fa3f6a.bindTooltip(
+                `<div>
+                     Amsterdam Tulip Museum, Prinsengracht 116
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a87590bd40bb240703f11aa2e0066486 = L.marker(
+                [52.3685, 4.893071],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_a87590bd40bb240703f11aa2e0066486.bindTooltip(
+                `<div>
+                     Allard Pierson Museum, Oude Turfmarkt 127
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f13c7e9d231f85c57d4fd3999164dc3 = L.marker(
+                [52.302141, 4.846416],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_3f13c7e9d231f85c57d4fd3999164dc3.bindTooltip(
+                `<div>
+                     Museum Jan van der Togt, Dorpsstraat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc8920083961fb9bcae2e55b5c06d877 = L.marker(
+                [52.36384, 4.894337],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_bc8920083961fb9bcae2e55b5c06d877.bindTooltip(
+                `<div>
+                     Museum Geelvinck, Keizersgracht 633
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd21996d5125827547711d4a79aa8591 = L.marker(
+                [52.3774, 4.891049],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_cd21996d5125827547711d4a79aa8591.bindTooltip(
+                `<div>
+                     Multatuli Museum, Korsjespoortsteeg 20
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_327812c939d66dd815a23bfd6013998d = L.marker(
+                [52.362316, 4.883228],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_327812c939d66dd815a23bfd6013998d.bindTooltip(
+                `<div>
+                     Schaakmuseum Max Euwe-Centrum, Max Euweplein 30A-I
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6443acaedcde9cf5799ea636e5e54b37 = L.marker(
+                [52.373891, 4.899247],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_6443acaedcde9cf5799ea636e5e54b37.bindTooltip(
+                `<div>
+                     Erotic Museum, Oudezijds Achterburgwal 54
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a200db65c08743b63405e1e4fc891da = L.marker(
+                [52.371738, 4.896984],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_8a200db65c08743b63405e1e4fc891da.bindTooltip(
+                `<div>
+                     Hash Marihuana & Hemp Museum, Oudezijds Achterburgwal 148
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_961bf2493f474efbfaed26e54a4e6ba0 = L.marker(
+                [52.363957, 4.893294],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_961bf2493f474efbfaed26e54a4e6ba0.bindTooltip(
+                `<div>
+                     Foam Fotografiemuseum Amsterdam, Keizersgracht 609
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3ee0f6792ef8814fa7b678648949485 = L.marker(
+                [52.365534, 4.891529],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_d3ee0f6792ef8814fa7b678648949485.bindTooltip(
+                `<div>
+                     Kattenkabinet, Herengracht 497
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b50e6a484c1362e21dc2f28f84e97b5 = L.marker(
+                [52.375081, 4.897912],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_2b50e6a484c1362e21dc2f28f84e97b5.bindTooltip(
+                `<div>
+                     Koffie- en Theemuseum Geels & Co, Warmoesstraat 67
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b3ebc043dc5f86bd431ca4cac28c2ea = L.marker(
+                [52.373127, 4.89008],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_0b3ebc043dc5f86bd431ca4cac28c2ea.bindTooltip(
+                `<div>
+                     Koninklijk Paleis, Dam
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86c4ae6e0fde51c351a079cc34667721 = L.marker(
+                [52.367349, 4.903915],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_86c4ae6e0fde51c351a079cc34667721.bindTooltip(
+                `<div>
+                     Joods Historisch Museum, Nieuwe Amstelstraat 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6334f2ce435b49ad3cffea20247018f6 = L.marker(
+                [52.365511, 4.89913],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_6334f2ce435b49ad3cffea20247018f6.bindTooltip(
+                `<div>
+                     Museum Willet-Holthuysen, Herengracht 605
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0399d1cc54f16c5935f8d2ebba4c0593 = L.marker(
+                [52.371563, 4.884163],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_0399d1cc54f16c5935f8d2ebba4c0593.bindTooltip(
+                `<div>
+                     Nederlands Instituut voor Mediakunst, Montevideo/Time Based Art, Keizersgracht 264
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d61434324bcc89057dad8b59a8f7e71 = L.marker(
+                [52.375105, 4.899487],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_7d61434324bcc89057dad8b59a8f7e71.bindTooltip(
+                `<div>
+                     Museum Ons' Lieve Heer op Solder, Oudezijds Voorburgwal 38
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b898416adcdb93b332f92de2db1f554 = L.marker(
+                [52.343013, 4.85433],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_6b898416adcdb93b332f92de2db1f554.bindTooltip(
+                `<div>
+                     Olympic Experience, Olympisch Stadion 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_541f9c2a602bed3e36a3f98b66499b26 = L.marker(
+                [52.313026, 4.772477],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_541f9c2a602bed3e36a3f98b66499b26.bindTooltip(
+                `<div>
+                     Rijksmuseum Amsterdam op Schiphol, Achter de paspoortcontrole tussen de E- en de F-Pier
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e2c446e5ca801f22c47f9e16d2b7a04 = L.marker(
+                [52.372153, 4.887754],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_3e2c446e5ca801f22c47f9e16d2b7a04.bindTooltip(
+                `<div>
+                     Stichting Nationaal Brilmuseum Amsterdam, Gasthuismolensteeg 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e932dcd19654aadd4a940f309296a761 = L.marker(
+                [52.375538, 4.882737],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_e932dcd19654aadd4a940f309296a761.bindTooltip(
+                `<div>
+                     Theo Thijssen Museum, Eerste Leliedwarsstraat 16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01010b0a57437a1da129f68c1f9b884f = L.marker(
+                [52.365002, 4.882108],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_01010b0a57437a1da129f68c1f9b884f.bindTooltip(
+                `<div>
+                     Greenbox Museum, Korte Leidsedwarsstraat 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97913e9d143575db5c27a9eac384d517 = L.marker(
+                [52.359584, 4.924214],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_97913e9d143575db5c27a9eac384d517.bindTooltip(
+                `<div>
+                     Witsenkamer, Oosterpark 82A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7866425e094768e4487eb4ee71b3c04b = L.marker(
+                [52.295008, 4.957898],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_7866425e094768e4487eb4ee71b3c04b.bindTooltip(
+                `<div>
+                     Museum Vrolik, Meibergdreef 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0993230ad4ca6956ab001a35fbd32f9e = L.marker(
+                [52.363563, 4.867388],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_0993230ad4ca6956ab001a35fbd32f9e.bindTooltip(
+                `<div>
+                     New Art space Amsterdam, Arie Biemondstraat 101
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a703493f27c702d5411d03fe5555a79 = L.marker(
+                [52.362614, 4.891803],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_2a703493f27c702d5411d03fe5555a79.bindTooltip(
+                `<div>
+                     Stadsarchief Amsterdam - De Bazel, Vijzelstraat 32
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdbd18aa64f1e59226e65eded9141936 = L.marker(
+                [52.356429, 4.879801],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_bdbd18aa64f1e59226e65eded9141936.bindTooltip(
+                `<div>
+                     Stedelijk Museum, Museumplein 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ded7e6aa38d47489dffec3a0181c48b = L.marker(
+                [52.372869, 4.881413],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_0ded7e6aa38d47489dffec3a0181c48b.bindTooltip(
+                `<div>
+                     Stedelijk Museum Bureau Amsterdam, Rozenstraat 59
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa425891cf937fcb9dd62b92e724d0ae = L.marker(
+                [52.376588, 4.897279],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_fa425891cf937fcb9dd62b92e724d0ae.bindTooltip(
+                `<div>
+                     Sexmuseum Amsterdam Venustempel, Damrak 18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bea1671847e63e7aa7452f8c2e3a9f1 = L.marker(
+                [52.374186, 4.912626],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_6bea1671847e63e7aa7452f8c2e3a9f1.bindTooltip(
+                `<div>
+                     Vereniging Museumhaven Amsterdam, Oosterdok 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae740088880227b9a93d46ba35acb3d4 = L.marker(
+                [52.471682, 4.815715],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_ae740088880227b9a93d46ba35acb3d4.bindTooltip(
+                `<div>
+                     Museumwinkel Albert Heijn, Kalverringdijk 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34d3e31a555583f8ab8fb2a2be3b4adb = L.marker(
+                [52.473459, 4.813352],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_34d3e31a555583f8ab8fb2a2be3b4adb.bindTooltip(
+                `<div>
+                     Honig Breethuis, Lagedijk 80
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c4cebf2ac04d12b8fc593e6fcc9f66dc = L.marker(
+                [52.355274, 4.900699],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_c4cebf2ac04d12b8fc593e6fcc9f66dc.bindTooltip(
+                `<div>
+                     Amsterdam Tattoo Museum, Van Woustraat 78HS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35a8a514bdf0a2fbde81f4c499ecf6d8 = L.marker(
+                [52.509798, 4.946605],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_35a8a514bdf0a2fbde81f4c499ecf6d8.bindTooltip(
+                `<div>
+                     Museum Waterland, Kaasmarkt 16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_725214485b259b12ba190bd2c5959bad = L.marker(
+                [52.3685, 4.893071],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_725214485b259b12ba190bd2c5959bad.bindTooltip(
+                `<div>
+                     Bijzondere Collecties, Oude Turfmarkt 129
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ada7c4e9d916d8c9c4ca7d65809c047 = L.marker(
+                [52.502306, 5.418986],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_8ada7c4e9d916d8c9c4ca7d65809c047.bindTooltip(
+                `<div>
+                     Nieuw Land Erfgoedcentrum, Oostvaardersdijk 113
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6fb0b16bb9e6d77e0175d1385f840b5 = L.marker(
+                [52.376381, 4.884267],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_c6fb0b16bb9e6d77e0175d1385f840b5.bindTooltip(
+                `<div>
+                     Amsterdam Cheese Museum, Prinsengracht 112
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f08627b64093f207618ce40cb6002e9 = L.marker(
+                [52.293362, 5.160596],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_0f08627b64093f207618ce40cb6002e9.bindTooltip(
+                `<div>
+                     Het Nederlands Vestingmuseum, Westwalstraat 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75f3b5cfc08f39a87056aec467a62ba5 = L.marker(
+                [52.37659, 4.913169],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_75f3b5cfc08f39a87056aec467a62ba5.bindTooltip(
+                `<div>
+                     Mediamatic, Dijksgracht 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ab704e1fb1510245289f562ce194d84 = L.marker(
+                [52.362946, 4.917803],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_1ab704e1fb1510245289f562ce194d84.bindTooltip(
+                `<div>
+                     Rijksakademie van Beeldende Kunsten, Sarphatistraat 470
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_822216ae4927716797f05ec26156b611 = L.marker(
+                [52.358649, 4.88076],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_822216ae4927716797f05ec26156b611.bindTooltip(
+                `<div>
+                     Vincent op Vrijdag, Paulus Potterstraat 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d095d05cdd7aa87c6270fc0e660432b = L.marker(
+                [52.376897, 4.633838],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_5d095d05cdd7aa87c6270fc0e660432b.bindTooltip(
+                `<div>
+                     Frans Hals Museum, Groot Heiligland 62
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64ad9b628e23eb07637237d8bfa66510 = L.marker(
+                [52.336925, 4.872262],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_64ad9b628e23eb07637237d8bfa66510.bindTooltip(
+                `<div>
+                     Amsterdam EXPO, Gustav Mahlerlaan  24
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19a6ab1eb98bee97a101ee4aadc0e679 = L.marker(
+                [52.366807, 4.912274],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_19a6ab1eb98bee97a101ee4aadc0e679.bindTooltip(
+                `<div>
+                     ARTIS-Micropia, Artisplein, Plantage Kerklaan 36-38
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_485fb9d353a5be5fb2f158c26d5a73ba = L.marker(
+                [52.380226, 4.640407],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_485fb9d353a5be5fb2f158c26d5a73ba.bindTooltip(
+                `<div>
+                     Teylers Museum, Spaarne 16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a46c9c62cb6781295e406834c0cb6fa5 = L.marker(
+                [52.382239, 4.63517],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_a46c9c62cb6781295e406834c0cb6fa5.bindTooltip(
+                `<div>
+                     Corrie ten Boomhuis, Barteljorisstraat 19
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a84444540dde51a6563b6430807b587c = L.marker(
+                [52.381285, 4.636332],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_a84444540dde51a6563b6430807b587c.bindTooltip(
+                `<div>
+                     De Hallen Haarlem, Grote Markt 16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54a867f65a7564f66ac6c163dc5e624f = L.marker(
+                [52.372886, 4.525204],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_54a867f65a7564f66ac6c163dc5e624f.bindTooltip(
+                `<div>
+                     Jutters Mu-ZEE-um, Strandweg 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac9d86dd5ff93cc354c0b3589033ee1a = L.marker(
+                [52.700862, 5.2939],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_ac9d86dd5ff93cc354c0b3589033ee1a.bindTooltip(
+                `<div>
+                     Flessenscheepjes Museum, Zuiderspui 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d67b5bbacf595c8342b8308b25403bf1 = L.marker(
+                [52.259007, 4.554704],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_d67b5bbacf595c8342b8308b25403bf1.bindTooltip(
+                `<div>
+                     Museum De Zwarte Tulp, Grachtweg 2a
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4eabf0168d08d99a064eee7a3d841bb5 = L.marker(
+                [52.367349, 4.903915],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_4eabf0168d08d99a064eee7a3d841bb5.bindTooltip(
+                `<div>
+                     JHM Kindermuseum, Nieuwe Amstelstraat 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_508ad6d4ce801614d32c601355e911f2 = L.marker(
+                [52.388189, 4.926015],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_508ad6d4ce801614d32c601355e911f2.bindTooltip(
+                `<div>
+                     Museum Amsterdam Noord, Zamenhofstraat 28A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4118a56cdda5350cce7785f1249f19d9 = L.marker(
+                [52.308913, 4.760834],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_4118a56cdda5350cce7785f1249f19d9.bindTooltip(
+                `<div>
+                     NEMO Science Museum op Schiphol, Achter de paspoortcontole, pier D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21267c2cd69170540695ee316cf557b1 = L.marker(
+                [52.365312, 4.902542],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_21267c2cd69170540695ee316cf557b1.bindTooltip(
+                `<div>
+                     Hollanders van de Gouden Eeuw, Amstel 51
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_802b578d46aa71eecb670cdb9ff2bccb = L.marker(
+                [52.373679, 4.898936],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_802b578d46aa71eecb670cdb9ff2bccb.bindTooltip(
+                `<div>
+                     Red Light Secrets, Oudezijds Achterburgwal 60H
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d649adb7bf08e82b0e749ee29f4c7057 = L.marker(
+                [52.235799, 5.172563],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_d649adb7bf08e82b0e749ee29f4c7057.bindTooltip(
+                `<div>
+                     Beeld en Geluid, Media Parkboulevard 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3ad5686d73d592fdb76bc66c1749596 = L.marker(
+                [52.370415, 4.891297],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_b3ad5686d73d592fdb76bc66c1749596.bindTooltip(
+                `<div>
+                     Schuttersgalerij, Kalverstraat  92
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e03a416e51c38167ae6e27b5d11462a1 = L.marker(
+                [52.087051, 5.130384],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_e03a416e51c38167ae6e27b5d11462a1.bindTooltip(
+                `<div>
+                     Het Spoorwegmuseum Utrecht, Hugo de Grootstraat 16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be5f2c2080df9a9ef3f55a7fd96213a0 = L.marker(
+                [52.367755, 4.912931],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_be5f2c2080df9a9ef3f55a7fd96213a0.bindTooltip(
+                `<div>
+                     Verzetsmuseum Junior, Plantage Kerklaan 61
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a9e8706fd7a2dd6c34f23a7cfa1488a = L.marker(
+                [52.365312, 4.902542],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_9a9e8706fd7a2dd6c34f23a7cfa1488a.bindTooltip(
+                `<div>
+                     Outsider Art Museum, Amstel 51
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a7a766173e14960fbccc7a301d8de4c = L.marker(
+                [52.364665, 4.882542],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_3a7a766173e14960fbccc7a301d8de4c.bindTooltip(
+                `<div>
+                     Green Box, Korte Leidsedwarsstraat 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_184977c131bb5523dbf74a6e050a2f6b = L.marker(
+                [52.234224, 5.945985],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_184977c131bb5523dbf74a6e050a2f6b.bindTooltip(
+                `<div>
+                     Paleis Het Loo, Koninklijk Park 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70af88f058c97c163e1aa450b85155cc = L.marker(
+                [52.297266, 5.164324],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_70af88f058c97c163e1aa450b85155cc.bindTooltip(
+                `<div>
+                     Comenius Museum, Kloosterstraat 33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9722662e4196335bf76265a77bfe2b46 = L.marker(
+                [52.370161, 4.888642],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_9722662e4196335bf76265a77bfe2b46.bindTooltip(
+                `<div>
+                     The Tea Rat, Raamsteeg 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbe7aea6eb635ed728f9d66ad0ec1bba = L.marker(
+                [52.680094, 4.807248],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_fbe7aea6eb635ed728f9d66ad0ec1bba.bindTooltip(
+                `<div>
+                     Museum BroekerVeiling, Museumweg 2-4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e351bb48aa09b8e53a8056bfe5fffd41 = L.marker(
+                [52.384952, 4.746678],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_e351bb48aa09b8e53a8056bfe5fffd41.bindTooltip(
+                `<div>
+                     SugarCity Events, Kristalpromenade 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e1d141642fbb4fcc69606a861da0c0f = L.marker(
+                [52.356522, 4.882108],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_5e1d141642fbb4fcc69606a861da0c0f.bindTooltip(
+                `<div>
+                     Poëzie Museum, Museumplein 100
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e786d4ddad86254cc7e09f523f996167 = L.marker(
+                [52.374238, 4.912014],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_e786d4ddad86254cc7e09f523f996167.bindTooltip(
+                `<div>
+                     NEMO Science Museum, Oosterdok 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7636acdf55f15c3c5484a5e6ed7503d4 = L.marker(
+                [52.362777, 4.922654],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_7636acdf55f15c3c5484a5e6ed7503d4.bindTooltip(
+                `<div>
+                     Tropenmuseum Junior, Linnaeusstraat 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aba0f295d4e2800ba8eea305c3d6698e = L.marker(
+                [52.369982, 4.882359],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_aba0f295d4e2800ba8eea305c3d6698e.bindTooltip(
+                `<div>
+                     Het Woonbootmuseum, Prinsengracht 296K
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c50e334014b53e3040bd912f96ba0b5 = L.marker(
+                [52.367887, 4.886289],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_8c50e334014b53e3040bd912f96ba0b5.bindTooltip(
+                `<div>
+                     Het Grachtenhuis, Herengracht 386
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da74a35c4861afc773cf1ccc2b0538ea = L.marker(
+                [52.467994, 4.807787],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_da74a35c4861afc773cf1ccc2b0538ea.bindTooltip(
+                `<div>
+                     Molenmuseum, Museumlaan 18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a91f5b0f7c574c14a9082568501e91e2 = L.marker(
+                [52.509742, 4.946421],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_a91f5b0f7c574c14a9082568501e91e2.bindTooltip(
+                `<div>
+                     Purmerends Museum, Kaasmarkt 20
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c512dcb0772ed177a7cdb47d7ad6a92 = L.marker(
+                [52.365312, 4.902542],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_8c512dcb0772ed177a7cdb47d7ad6a92.bindTooltip(
+                `<div>
+                     Hermitage Amsterdam, Amstel 51
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a07db48bf1530c619b40992153cbe9ab = L.marker(
+                [52.471682, 4.815877],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_a07db48bf1530c619b40992153cbe9ab.bindTooltip(
+                `<div>
+                     Museum Zaanse Tijd, Kalverringdijk 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b562ef239b7a6a534987d75a3eedfa0 = L.marker(
+                [52.473274, 4.817829],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_7b562ef239b7a6a534987d75a3eedfa0.bindTooltip(
+                `<div>
+                     Bakkerij Museum 'In de Gecroonde Duyvekater', Zeilenmakerspad 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d79c591d17afba8231a502adcfedff4e = L.marker(
+                [52.493173, 5.074744],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_d79c591d17afba8231a502adcfedff4e.bindTooltip(
+                `<div>
+                     Volendams Museum, Zeestraat 41
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49c97673a8fbb6ce037f904762bbde4d = L.marker(
+                [52.523826, 5.437938],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_49c97673a8fbb6ce037f904762bbde4d.bindTooltip(
+                `<div>
+                     Bataviawerf Lelystad, Oostvaardersdijk 1-9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6fb581b91d66c73a5583d2a50c3dd151 = L.marker(
+                [52.437351, 4.823555],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_6fb581b91d66c73a5583d2a50c3dd151.bindTooltip(
+                `<div>
+                     Czaar Peterhuisje, Krimp 23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d47e1bcde6a5bee5725f91c5f5122e53 = L.marker(
+                [52.473071, 4.820372],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_d47e1bcde6a5bee5725f91c5f5122e53.bindTooltip(
+                `<div>
+                     Zaanse Schans, Schansend 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_faec5de0457e52f15b3b84a6747e7d09 = L.marker(
+                [52.473499, 4.821726],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_faec5de0457e52f15b3b84a6747e7d09.bindTooltip(
+                `<div>
+                     Zaans Museum en Verkade Paviljoen, Schansend 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a89086603de43e86f5bd3ba096b4062 = L.marker(
+                [52.08341, 4.314162],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_1a89086603de43e86f5bd3ba096b4062.bindTooltip(
+                `<div>
+                     Escher in het Paleis, Lange Voorhout 74
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_036af5e66b5c3fe8998ddff5b05b1712 = L.marker(
+                [52.44801, 4.636773],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_036af5e66b5c3fe8998ddff5b05b1712.bindTooltip(
+                `<div>
+                     Pieter Vermeulen Museum, Driehuizerkerkweg 34d
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e81391b2cbc36f13c7c1a103e3e0a0e7 = L.marker(
+                [52.456438, 5.527263],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_e81391b2cbc36f13c7c1a103e3e0a0e7.bindTooltip(
+                `<div>
+                     Aviodrome, Pelikaanweg 50
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f7ef90d66dc27137f95e5d59e908899 = L.marker(
+                [52.509967, 4.946354],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_9f7ef90d66dc27137f95e5d59e908899.bindTooltip(
+                `<div>
+                     Het Purmerends Museum, Kaasmarkt 20
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36f8d8d7a86771759b03bc752e9a1a10 = L.marker(
+                [52.583547, 5.019594],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_36f8d8d7a86771759b03bc752e9a1a10.bindTooltip(
+                `<div>
+                     Het schooltje van Dik Trom, Etersheim 8a
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6a0197d3ed0889dc162b56a76d5aead = L.marker(
+                [52.490694, 5.065541],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_f6a0197d3ed0889dc162b56a76d5aead.bindTooltip(
+                `<div>
+                     Palingrokerij Smit Bokkum, Slobbeland 19
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0a0687c608649064d21044b508a676c = L.marker(
+                [52.365181, 4.896862],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_b0a0687c608649064d21044b508a676c.bindTooltip(
+                `<div>
+                     Tassenmuseum Hendrikje, Herengracht 573
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_070480c2f6396170006fd8bd26e354d8 = L.marker(
+                [52.380042, 4.827096],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_070480c2f6396170006fd8bd26e354d8.bindTooltip(
+                `<div>
+                     Van Eesteren Museum, Burg de Vlugtlaan 125
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9326201f8bf415bc2b46ad5897a26cb8 = L.marker(
+                [52.367879, 4.919781],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_9326201f8bf415bc2b46ad5897a26cb8.bindTooltip(
+                `<div>
+                     Museum 't Kromhout, Hoogte Kadijk 147
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_893a8c4a8e5808f110241a26e0dcf6e2 = L.marker(
+                [52.367374, 4.887813],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_893a8c4a8e5808f110241a26e0dcf6e2.bindTooltip(
+                `<div>
+                     Klederdracht Museum Amsterdam, Herengracht 427
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c9c83828df1a3aab7174666a84b7f7f = L.marker(
+                [52.367638, 4.884824],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_7c9c83828df1a3aab7174666a84b7f7f.bindTooltip(
+                `<div>
+                     Huis Marseille, Museum voor Fotografie, Keizersgracht 401
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5cdc178c326e75bf60418cd03604284c = L.marker(
+                [52.089257, 4.28001],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_5cdc178c326e75bf60418cd03604284c.bindTooltip(
+                `<div>
+                     Gemeentemuseum Den Haag, Stadhouderslaan 41
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b988e96d1ba07e2f8d2663ab618a54e = L.marker(
+                [52.358709, 4.881901],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_0b988e96d1ba07e2f8d2663ab618a54e.bindTooltip(
+                `<div>
+                     Moco Museum, Honthorststraat 20
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e113b6c444bccf4aed541d9ffcfddd44 = L.marker(
+                [52.3573751, 4.8381231],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_e113b6c444bccf4aed541d9ffcfddd44.bindTooltip(
+                `<div>
+                     De Appel, Schipluidenlaan 12D4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0f173c961830f07a64ca4d7e7c10da1 = L.marker(
+                [52.258881, 4.553636],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_b0f173c961830f07a64ca4d7e7c10da1.bindTooltip(
+                `<div>
+                     Museum De Zwarte Tulp, Heereweg 219
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3db57aa6c79e3e6e42d0b64abbafdf15 = L.marker(
+                [52.368534, 4.886355],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_3db57aa6c79e3e6e42d0b64abbafdf15.bindTooltip(
+                `<div>
+                     Cromhouthuis, Herengracht 366-368
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcbf26980788fcd4bf3d29d5415abb56 = L.marker(
+                [52.367755, 4.912931],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_dcbf26980788fcd4bf3d29d5415abb56.bindTooltip(
+                `<div>
+                     Verzetsmuseum Amsterdam, Plantage Kerklaan 61
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1dd2ade65cf14ac3c445b707c18c85e = L.marker(
+                [52.369198, 4.939839],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_c1dd2ade65cf14ac3c445b707c18c85e.bindTooltip(
+                `<div>
+                     Nederlands Persmuseum, Zeeburgerkade 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e2bd9abf70f93c13fc585116b00b81a = L.marker(
+                [52.293425, 5.160401],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_9e2bd9abf70f93c13fc585116b00b81a.bindTooltip(
+                `<div>
+                     Het Nederlands Vestingmuseum Naarden, Westwalstraat 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8770f9177936d33b2951a3dce9e50e2 = L.marker(
+                [52.373127, 4.89008],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_e8770f9177936d33b2951a3dce9e50e2.bindTooltip(
+                `<div>
+                     De Nieuwe Kerk Amsterdam, Dam
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6a7b0a50fc2b0ca7a8a046e8c3f3153 = L.marker(
+                [52.457412, 4.598628],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_b6a7b0a50fc2b0ca7a8a046e8c3f3153.bindTooltip(
+                `<div>
+                     Zee-en Havenmuseum, Havenkade 55
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf448e8c2d736d6f75107a1f0ed7f670 = L.marker(
+                [52.363658, 4.886047],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_bf448e8c2d736d6f75107a1f0ed7f670.bindTooltip(
+                `<div>
+                     Amsterdam Pipe Museum, Prinsengracht 488
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab2026ac349c2361f0da148b3f0bc9f4 = L.marker(
+                [52.346238, 4.938456],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_ab2026ac349c2361f0da148b3f0bc9f4.bindTooltip(
+                `<div>
+                     Nederlands Uitvaart Museum Tot Zover, Kruislaan 124
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03a0e3eb1f48ebb88abe4056e5f9c10e = L.marker(
+                [52.259387, 5.221621],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_03a0e3eb1f48ebb88abe4056e5f9c10e.bindTooltip(
+                `<div>
+                     Singer Laren, Oude Drift 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca15bcb869a82ecaa21e570fe50146e4 = L.marker(
+                [52.303684, 4.858702],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_ca15bcb869a82ecaa21e570fe50146e4.bindTooltip(
+                `<div>
+                     Cobra Museum voor Moderne Kunst, Sandbergplein 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7084b47da0081adc5c34c5b03d6ad233 = L.marker(
+                [52.363402, 4.893366],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_7084b47da0081adc5c34c5b03d6ad233.bindTooltip(
+                `<div>
+                     Museum Van Loon, Keizersgracht 672
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e58430f853d1c2eaa37c2578a460790e = L.marker(
+                [52.297305, 5.164418],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_e58430f853d1c2eaa37c2578a460790e.bindTooltip(
+                `<div>
+                     Comenius Museum, Kloosterstraat 33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f22e96a3976826463c416f474661f1c = L.marker(
+                [52.70306, 5.296976],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_7f22e96a3976826463c416f474661f1c.bindTooltip(
+                `<div>
+                     Het Zuiderzeemuseum, Wierdijk 12-22
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32feeb35b5b1d76fa112976d5cb26915 = L.marker(
+                [52.509967, 4.946354],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_32feeb35b5b1d76fa112976d5cb26915.bindTooltip(
+                `<div>
+                     VVV Informatiepunt Purmerend, Kaasmarkt 20
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f739995be86c97800fbf6155d3aebe6 = L.marker(
+                [52.366902, 4.91093],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_9f739995be86c97800fbf6155d3aebe6.bindTooltip(
+                `<div>
+                     Nationaal Holocaust Museum, Plantage Middenlaan 27
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d80a1a88c9a023f4ef4142ea311056e3 = L.marker(
+                [52.356429, 4.879801],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_d80a1a88c9a023f4ef4142ea311056e3.bindTooltip(
+                `<div>
+                     Van Gogh Museum, Museumplein 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdfa305324d13888f4632137da773e99 = L.marker(
+                [52.375132, 4.884142],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_bdfa305324d13888f4632137da773e99.bindTooltip(
+                `<div>
+                     Anne Frank Huis, Prinsengracht 267
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8bf4dd41931ef72ad4a141d7b14d8c8d = L.marker(
+                [52.384399, 4.900978],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_8bf4dd41931ef72ad4a141d7b14d8c8d.bindTooltip(
+                `<div>
+                     EYE Filmmuseum, IJpromenade 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7106385e7ef819baeab5134b17918e02 = L.marker(
+                [52.362777, 4.922654],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_7106385e7ef819baeab5134b17918e02.bindTooltip(
+                `<div>
+                     Tropenmuseum, Linnaeusstraat 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18323fef36c03d5628331ca40d28f5a2 = L.marker(
+                [52.37077, 4.916425],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_18323fef36c03d5628331ca40d28f5a2.bindTooltip(
+                `<div>
+                     Het Scheepvaartmuseum Amsterdam, Kattenburgerplein 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d89c51f2df7b30c10076ceab2ca2746 = L.marker(
+                [52.360007, 4.885185],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_1d89c51f2df7b30c10076ceab2ca2746.bindTooltip(
+                `<div>
+                     Rijksmuseum, Museumstraat 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a78a8c28082cc9e29aa3446d582cca7a = L.marker(
+                [52.369358, 4.901191],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_a78a8c28082cc9e29aa3446d582cca7a.bindTooltip(
+                `<div>
+                     Museum Het Rembrandthuis, Jodenbreestraat  4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4369bab977a81d9bdff4bdf259eb243 = L.marker(
+                [52.37865, 4.88357],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_b4369bab977a81d9bdff4bdf259eb243.bindTooltip(
+                `<div>
+                     Geelvinck Pianola Museum, Westerstraat 106
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5e9cefbedfd949b5628670ff8bc16ea = L.marker(
+                [52.378509, 4.883645],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_b5e9cefbedfd949b5628670ff8bc16ea.bindTooltip(
+                `<div>
+                     Pianola Museum, Westerstraat 106
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96d1086630b2502e376dbe8a8843371d = L.marker(
+                [52.359431, 4.88248],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_96d1086630b2502e376dbe8a8843371d.bindTooltip(
+                `<div>
+                     Diamant Museum Amsterdam, Paulus Potterstraat 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0115f0b41ecd3f8d31401870a62b7c54 = L.marker(
+                [52.390401, 4.873812],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_0115f0b41ecd3f8d31401870a62b7c54.bindTooltip(
+                `<div>
+                     Museum Het Schip - De Amsterdamse School, Oostzaanstraat 45
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a23774ab5f958c4a9191ac79c3481f6 = L.marker(
+                [52.362614, 4.891803],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_8a23774ab5f958c4a9191ac79c3481f6.bindTooltip(
+                `<div>
+                     Foam Editions, Vijzelstraat 78
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aded8f817fee600e04f6074ab7bcd225 = L.marker(
+                [52.36935, 4.894035],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_aded8f817fee600e04f6074ab7bcd225.bindTooltip(
+                `<div>
+                     Galerie Mokum, Oudezijds Voorburgwal 334
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5beea57698fd0ca8aee558c36037f4e2 = L.marker(
+                [52.373056, 4.892222],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_5beea57698fd0ca8aee558c36037f4e2.bindTooltip(
+                `<div>
+                     Stichting WG-Kunst, M v Bouwdk Bastiaansestr 28
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0de0ac2bc076343fb650bd0eb05094d7 = L.marker(
+                [52.36521, 4.890257],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_0de0ac2bc076343fb650bd0eb05094d7.bindTooltip(
+                `<div>
+                     Lieve Hemel, Nieuwe Spiegelstraat 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3379bc0121daddd6c75b451c448174c9 = L.marker(
+                [52.371321, 4.897631],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_3379bc0121daddd6c75b451c448174c9.bindTooltip(
+                `<div>
+                     Anadolu 3-D Holography, Oude Hoogstraat 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90d00231843829a3feba41eef99ae90d = L.marker(
+                [52.241937, 4.843816],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_90d00231843829a3feba41eef99ae90d.bindTooltip(
+                `<div>
+                     Kunstuitleen en Galerie Timeless, Ondernemingsweg 45
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8509b26075a9fe81a1f8b81634c54a23 = L.marker(
+                [52.371246, 4.877291],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_8509b26075a9fe81a1f8b81634c54a23.bindTooltip(
+                `<div>
+                     Annet Gelink Gallery, Laurierstraat 187-189
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc584364c76c18ba60163b9446e04a82 = L.marker(
+                [52.375627, 4.884704],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_fc584364c76c18ba60163b9446e04a82.bindTooltip(
+                `<div>
+                     Galerie Paul Andriesse, Leliegracht 47
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b63f5e88920f8a6d5562ef9beaaca10 = L.marker(
+                [52.36015, 4.891983],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_1b63f5e88920f8a6d5562ef9beaaca10.bindTooltip(
+                `<div>
+                     Akinci, Lijnbaansgracht 317
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7db4d2fd1286dc4e5d0ba8c454a9c3bf = L.marker(
+                [52.373448, 4.878379],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_7db4d2fd1286dc4e5d0ba8c454a9c3bf.bindTooltip(
+                `<div>
+                     Fons Welters, Bloemstraat 140
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_184c1f9e35c482ab445ff6c48ca4c874 = L.marker(
+                [52.370466, 4.903484],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_184c1f9e35c482ab445ff6c48ca4c874.bindTooltip(
+                `<div>
+                     Van Zoetendaal Photography, Oudeschans 67F
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_036f788c4faf0a0ee9436966311777ae = L.marker(
+                [52.374686, 4.881248],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_036f788c4faf0a0ee9436966311777ae.bindTooltip(
+                `<div>
+                     Eduard Planting Galerie, Eerste Bloemdwarsstraat 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee34b3ac371f243f850a9d7da608c8e8 = L.marker(
+                [52.377177, 4.939348],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_ee34b3ac371f243f850a9d7da608c8e8.bindTooltip(
+                `<div>
+                     Galerie Pien Rademakers, KNSM-Laan 291
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f67d88d49a295d83e17bb49ac1b53592 = L.marker(
+                [52.377851, 4.883504],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_f67d88d49a295d83e17bb49ac1b53592.bindTooltip(
+                `<div>
+                     KochxBos, Eerste Anjeliersdwarsstraat 36
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_818555442edd159c3606234b182c61c9 = L.marker(
+                [52.361354, 4.886539],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_818555442edd159c3606234b182c61c9.bindTooltip(
+                `<div>
+                     Galerie Alex Daniëls ? Reflex Amsterdam, Weteringschans 79A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_047e25a9b1369a51bd76e241ba881a71 = L.marker(
+                [52.372704, 4.880602],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_047e25a9b1369a51bd76e241ba881a71.bindTooltip(
+                `<div>
+                     Radar Architecture & Art, Eerste Rozendwarsstraat 17
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fffb8b50655fb6d9864c1c16b6352a4 = L.marker(
+                [52.373871, 4.896005],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_9fffb8b50655fb6d9864c1c16b6352a4.bindTooltip(
+                `<div>
+                     w139, Warmoesstraat 139
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53d4bb8c4bcfdf33bf3d0084aadcdac9 = L.marker(
+                [52.370445, 4.883329],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_53d4bb8c4bcfdf33bf3d0084aadcdac9.bindTooltip(
+                `<div>
+                     de Glaswerkplaats, Berenstraat 41
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_003d4dd489901c80e75372a1d5678e34 = L.marker(
+                [52.366862, 4.868855],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_003d4dd489901c80e75372a1d5678e34.bindTooltip(
+                `<div>
+                     Beeldend Gesproken, Hannie Dankbaarpassage 23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1969936a227a33c658e2984bbefe136 = L.marker(
+                [52.315495, 4.955534],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_a1969936a227a33c658e2984bbefe136.bindTooltip(
+                `<div>
+                     CBK Zuidoost, Anton de Komplein 120
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b57aaa4ca499eb0a1521145f5257f57c = L.marker(
+                [52.370287, 4.884359],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_b57aaa4ca499eb0a1521145f5257f57c.bindTooltip(
+                `<div>
+                     Dutch Accent, Berenstraat 41
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbf4f1ea39dc3c7fc4fc3e8048cf9397 = L.marker(
+                [52.36052, 4.886472],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_bbf4f1ea39dc3c7fc4fc3e8048cf9397.bindTooltip(
+                `<div>
+                     De Portretwinkel, Stadhouderskade 42
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6dc3856957be5a51d27f6a998e170848 = L.marker(
+                [52.367073, 4.938826],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_6dc3856957be5a51d27f6a998e170848.bindTooltip(
+                `<div>
+                     P//////AKT Project Space, Zeeburgerpad 53
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81ee8079b96888837015f54f30071997 = L.marker(
+                [52.400623, 4.89227],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_81ee8079b96888837015f54f30071997.bindTooltip(
+                `<div>
+                     Sociëteit Sexyland, Ms. van Riemsdijkweg  39
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ef90d7dd09386947627504b27f1791e = L.marker(
+                [52.362093, 4.895765],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_4ef90d7dd09386947627504b27f1791e.bindTooltip(
+                `<div>
+                     Galerie Lemaire, Reguliersgracht 80
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5161cea79f38c0671d33ec924a8a8c05 = L.marker(
+                [52.366665, 4.899517],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_5161cea79f38c0671d33ec924a8a8c05.bindTooltip(
+                `<div>
+                     Kryon Art Gallery, Amstel 182A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccb50a670da909ee084fa0aed8fe8abd = L.marker(
+                [52.368862, 4.891755],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_ccb50a670da909ee084fa0aed8fe8abd.bindTooltip(
+                `<div>
+                     Maatschappij Arti et Amicitiae, Rokin 112
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98ba1622c52ab2cc93381843a15a355a = L.marker(
+                [52.369138, 4.917682],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_98ba1622c52ab2cc93381843a15a355a.bindTooltip(
+                `<div>
+                     Galerie Franzis Engels, Nieuwevaart 200
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65aa3d4b428337e09846b867312b04b0 = L.marker(
+                [52.383063, 4.903094],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_65aa3d4b428337e09846b867312b04b0.bindTooltip(
+                `<div>
+                     Framer Framed, IJpromenade 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d03d2b45a6c08ce02fcc837c6de9cf46 = L.marker(
+                [52.255266, 4.758602],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_d03d2b45a6c08ce02fcc837c6de9cf46.bindTooltip(
+                `<div>
+                     Galerie Sous-Terre, Kudelstaartseweg 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0afbed7767d3e4ed1c1e13f62a95bd31 = L.marker(
+                [52.36052, 4.886472],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_0afbed7767d3e4ed1c1e13f62a95bd31.bindTooltip(
+                `<div>
+                     Morren Galleries, Stadhouderskade 42
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b492b048a40e417b32ec371b9a54823c = L.marker(
+                [52.370601, 4.879857],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_b492b048a40e417b32ec371b9a54823c.bindTooltip(
+                `<div>
+                     Wim van Krimpen, Hazenstraat 20
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c4ab68bae26e47146124ac7a4c52501 = L.marker(
+                [52.37797, 4.897046],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_9c4ab68bae26e47146124ac7a4c52501.bindTooltip(
+                `<div>
+                     5&33 Kunstgalerij, Martelaarsgracht
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86fd8af7b6a467087d7304f8b28e1679 = L.marker(
+                [52.370245, 4.864252],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_86fd8af7b6a467087d7304f8b28e1679.bindTooltip(
+                `<div>
+                     Art Gallery Salon West, Admiraal de Ruijterweg 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_366d18359df1f0a56ca851d1285136bc = L.marker(
+                [52.384154, 4.891599],
+                {}
+            ).addTo(map_94701949f0432b53f260487c2786d403);
+        
+    
+            marker_366d18359df1f0a56ca851d1285136bc.bindTooltip(
+                `<div>
+                     Ateliers Westerdok, Westerdok 318
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

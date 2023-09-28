@@ -13,7 +13,7 @@ def marktKaart():
    records = [ ]
    bestand = pd.read_csv("csvfiles/MARKTEN_NEW.csv", sep=",", encoding="latin-1")
    data = bestand.to_dict(orient='records')
-   print(bestand)
+
    museum_map = folium.Map(location=[52.377956, 4.897070], zoom_start=10)
 
    for row in data: 
