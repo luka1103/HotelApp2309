@@ -5,6 +5,8 @@ import lukaprobeersels
 import jeroenprobeer
 import zaidtest
 import searchRestaurants
+import marktKaart
+from flask import render_template
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -25,6 +27,12 @@ def methodefelix(eengegeven):
 @cross_origin()
 def methodeluka(mijngegeven):
     return lukaprobeersels.functieluka(mijngegeven)
+
+marktKaart.marktKaart()
+@app.route("/marktenkaart")
+@cross_origin()
+def methodemarktkaart():
+    return render_template('markten_kaart.html')
 
 @app.route("/jeroen/<mijngegeven>")
 @cross_origin()
