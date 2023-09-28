@@ -28,5 +28,3 @@ def marktKaart():
 
         folium.Marker([latitude, longitude], tooltip=tooltip).add_to(museum_map)
         museum_map.save('markten_kaart.html') 
-        
-marktKaart()
