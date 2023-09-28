@@ -28,10 +28,10 @@ def methodefelix(eengegeven):
 def methodeluka(mijngegeven):
     return lukaprobeersels.functieluka(mijngegeven)
 
-marktKaart.marktKaart()
 @app.route("/marktenkaart")
 @cross_origin()
 def methodemarktkaart():
+    marktKaart.marktKaart()
     return render_template('markten_kaart.html')
 
 @app.route("/jeroen/<mijngegeven>")

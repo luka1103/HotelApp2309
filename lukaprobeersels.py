@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from json import loads, dumps
 from flask import jsonify
+import marktKaart
 
 def functieluka(artikelen):
 
