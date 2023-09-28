@@ -28,7 +28,7 @@ def functiezaid2():
    records = [ ]
 
    bestand = pd.read_csv("csvfiles/MuseaGalleries.csv", sep=";", encoding='latin-1')
-   print(bestand)
+   #print(bestand)
    data = bestand.to_dict(orient='records')
    museum_map = folium.Map(location=[52.377956, 4.897070], zoom_start=15)
 

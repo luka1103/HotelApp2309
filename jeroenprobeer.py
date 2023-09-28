@@ -9,15 +9,9 @@ def jeroenfunctie(stad):
 
   for i, ad in bestand.iterrows():
     if ad["City"].find(stad) >= 0:
-      print("Yes")
       legelijst.append(i)
-    else: 
-      print("No")
   
-  print(legelijst)
   leegDataframe = bestand.loc[legelijst].copy()
-  print (leegDataframe)
   result = leegDataframe.to_json(orient="records")
   parsed = loads(result)
   return dumps(parsed, indent=4) 
-print(jeroenfunctie("HAARLEM"))

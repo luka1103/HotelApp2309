@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_36f9f5b7b48b3bc89e9974ebc6d59523 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_36f9f5b7b48b3bc89e9974ebc6d59523" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_36f9f5b7b48b3bc89e9974ebc6d59523 = L.map(
+                "map_36f9f5b7b48b3bc89e9974ebc6d59523",
+                {
+                    center: [52.377956, 4.89707],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_32be1fad396703dd5b2691af387bd079 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            var marker_f164ed753b945a0c1c5ce31a8dac8bf9 = L.marker(
+                [52.3683624, 4.9017482],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_f164ed753b945a0c1c5ce31a8dac8bf9.bindTooltip(
+                `<div>
+                     Artikelen: Kunst / Antiek en curiosa <br> Geopend op de volgende dagen: Ma Di Wo Do Vr Za 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c351dd4c974866b27b3d5273c4dba023 = L.marker(
+                [52.3550148, 4.8908691],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_c351dd4c974866b27b3d5273c4dba023.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Ma Di Wo Do Vr Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0eb8b5dcaab029953156e8b48cc9ca96 = L.marker(
+                [52.3784904, 4.8457112],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_0eb8b5dcaab029953156e8b48cc9ca96.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Di Wo Do Vr Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2e243d16912fe778a3b7568592cfc4f = L.marker(
+                [52.3986168, 4.9364452],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_b2e243d16912fe778a3b7568592cfc4f.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Ma Di Wo Do Vr Za 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_835f2ccbb165c2af6e5d2f409b67b095 = L.marker(
+                [52.3622246, 4.9277439],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_835f2ccbb165c2af6e5d2f409b67b095.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Ma Di Wo Do Vr Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5aec0a2b9413290eef03a21a346a418b = L.marker(
+                [52.315426, 4.956486],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_5aec0a2b9413290eef03a21a346a418b.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Ma Do Vr
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cea6e15d0b837cedcb2a2964a6a1c98 = L.marker(
+                [52.3167174, 4.9790383],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_1cea6e15d0b837cedcb2a2964a6a1c98.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Di
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63a3313b47219816c5d55a0f28e30201 = L.marker(
+                [52.3725624, 4.900321],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_63a3313b47219816c5d55a0f28e30201.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Ma Di Wo Do Vr Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7eb7f89f72ab29af79d9c08df994c092 = L.marker(
+                [52.362381, 4.8975739],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_7eb7f89f72ab29af79d9c08df994c092.bindTooltip(
+                `<div>
+                     Artikelen: Bloemen en planten <br> Geopend op de volgende dagen: Ma 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_422f791d0d3dc9ae76edcceeb29f8eaf = L.marker(
+                [52.322102, 4.9698755],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_422f791d0d3dc9ae76edcceeb29f8eaf.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e5b49efbdf8e083387280a24d60716ab = L.marker(
+                [52.3848801, 4.8838201],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_e5b49efbdf8e083387280a24d60716ab.bindTooltip(
+                `<div>
+                     Artikelen: Boerenmarkt / Bioversmarkt <br> Geopend op de volgende dagen: Wo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4d0077c2b9a09fceca9c7dd3966f855 = L.marker(
+                [52.377964, 4.8010898],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_b4d0077c2b9a09fceca9c7dd3966f855.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Ma
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17f404eb0a2601a4adb4cbd0794d8d79 = L.marker(
+                [52.3801651, 4.8844528],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_17f404eb0a2601a4adb4cbd0794d8d79.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1547187dd2a63e7bb698243b76dec8d = L.marker(
+                [52.3722267, 4.9006319],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_d1547187dd2a63e7bb698243b76dec8d.bindTooltip(
+                `<div>
+                     Artikelen: Boerenmarkt / Bioversmarkt <br> Geopend op de volgende dagen: Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86651985b9ade22f094d0c0f06aa3240 = L.marker(
+                [52.3796158, 4.8864808],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_86651985b9ade22f094d0c0f06aa3240.bindTooltip(
+                `<div>
+                     Artikelen: Boerenmarkt / Bioversmarkt <br> Geopend op de volgende dagen: Za 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e65ef75fec578a519ed8e6234a54e293 = L.marker(
+                [52.3794136, 4.8864698],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_e65ef75fec578a519ed8e6234a54e293.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Ma 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_022e52cf04dc483259a5437edf9e3cac = L.marker(
+                [52.2970358, 4.9755026],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_022e52cf04dc483259a5437edf9e3cac.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Wo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8f3e648db043db663b346592824c116 = L.marker(
+                [52.3687935, 4.8897529],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_a8f3e648db043db663b346592824c116.bindTooltip(
+                `<div>
+                     Artikelen: Boeken <br> Geopend op de volgende dagen: Vr 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f33ba1ce70c47b1f1864b01fbe7e6444 = L.marker(
+                [52.3688469, 4.8899941],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_f33ba1ce70c47b1f1864b01fbe7e6444.bindTooltip(
+                `<div>
+                     Artikelen: Kunst / Antiek en curiosa <br> Geopend op de volgende dagen: Zo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28feb08daec009eed349d122be8fc0dd = L.marker(
+                [52.3570786, 4.7954888],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_28feb08daec009eed349d122be8fc0dd.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Di
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_663fe03ed48ee6792448f454c7855db1 = L.marker(
+                [52.3786125, 4.88485],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_663fe03ed48ee6792448f454c7855db1.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Ma 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67435e8f3b97946f0265081fb4a38eb5 = L.marker(
+                [52.3724174, 4.9384079],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_67435e8f3b97946f0265081fb4a38eb5.bindTooltip(
+                `<div>
+                     Artikelen: Boerenmarkt / Bioversmarkt <br> Geopend op de volgende dagen: Wo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03a6c029260981d48736caadc2a943d5 = L.marker(
+                [52.3723831, 4.9001708],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_03a6c029260981d48736caadc2a943d5.bindTooltip(
+                `<div>
+                     Artikelen: Kunst / Antiek en curiosa <br> Geopend op de volgende dagen: Zo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c7f9abffbb775fb7b22d5cb48ae1162 = L.marker(
+                [52.3666916, 4.8914161],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_5c7f9abffbb775fb7b22d5cb48ae1162.bindTooltip(
+                `<div>
+                     Artikelen: Bloemen en planten <br> Geopend op de volgende dagen: Ma Di Wo Do Vr Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69111157e175f75a558901a7b324f312 = L.marker(
+                [52.3713303, 4.8902998],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_69111157e175f75a558901a7b324f312.bindTooltip(
+                `<div>
+                     Artikelen: Postzegels en munten <br> Geopend op de volgende dagen: Wo Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccef1373472fdfd2a0b1e1e0fad46bf2 = L.marker(
+                [52.3985634, 4.9397278],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_ccef1373472fdfd2a0b1e1e0fad46bf2.bindTooltip(
+                `<div>
+                     Artikelen: Boerenmarkt / Bioversmarkt <br> Geopend op de volgende dagen: Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d712d6e8fa36c9f46dd34a505f9af835 = L.marker(
+                [52.380021, 4.821625],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_d712d6e8fa36c9f46dd34a505f9af835.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Di Wo Do Vr Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64c7d1453fd00d27e750f9569fa9b380 = L.marker(
+                [52.3664093, 4.8672009],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_64c7d1453fd00d27e750f9569fa9b380.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Ma Di Wo Do Vr Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7dbe50d516ac153247311ceecbdb91e8 = L.marker(
+                [52.355012, 4.826431],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_7dbe50d516ac153247311ceecbdb91e8.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Wo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_306b85ee4cfba67d57159b1100765f23 = L.marker(
+                [52.365958, 4.89634],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_306b85ee4cfba67d57159b1100765f23.bindTooltip(
+                `<div>
+                     Artikelen: Kunst / Antiek en curiosa <br> Geopend op de volgende dagen: Zo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75a8f8044f151fca02275688369a8639 = L.marker(
+                [52.3439409, 4.8577271],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_75a8f8044f151fca02275688369a8639.bindTooltip(
+                `<div>
+                     Artikelen: Boerenmarkt / Bioversmarkt <br> Geopend op de volgende dagen: Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4eeceafa3c42d01bddd58933f775a6e4 = L.marker(
+                [52.389843, 4.9104171],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_4eeceafa3c42d01bddd58933f775a6e4.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Wo Vr Za 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_370494652633ffc817a704d4dad46a0a = L.marker(
+                [52.3889389, 4.9098272],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_370494652633ffc817a704d4dad46a0a.bindTooltip(
+                `<div>
+                     Artikelen: Boerenmarkt / Bioversmarkt <br> Geopend op de volgende dagen: Vr
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fe1daabeb4fe4420a1825c2a2e7d959 = L.marker(
+                [52.3906174, 4.9109311],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_2fe1daabeb4fe4420a1825c2a2e7d959.bindTooltip(
+                `<div>
+                     Artikelen: Kunst / Antiek en curiosa <br> Geopend op de volgende dagen: Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d1a8dcb607039782e3e1bfba1c5ecd3 = L.marker(
+                [52.3567314, 4.8971772],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_5d1a8dcb607039782e3e1bfba1c5ecd3.bindTooltip(
+                `<div>
+                     Artikelen: Boerenmarkt / Bioversmarkt <br> Geopend op de volgende dagen: Wo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1defc2928be8dcd7c37afe04d928ffd8 = L.marker(
+                [52.3322105, 4.8916841],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_1defc2928be8dcd7c37afe04d928ffd8.bindTooltip(
+                `<div>
+                     Artikelen: Algemene waren <br> Geopend op de volgende dagen: Zo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_371bdde29f86f9b1626cd4cb6069b7b8 = L.marker(
+                [52.4020004, 4.8942642],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_371bdde29f86f9b1626cd4cb6069b7b8.bindTooltip(
+                `<div>
+                     Artikelen: Kunst / Antiek en curiosa <br> Geopend op de volgende dagen: Za Zo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95cdd7a1b321721f63fe05f443377d05 = L.marker(
+                [52.3511405, 4.9296989],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_95cdd7a1b321721f63fe05f443377d05.bindTooltip(
+                `<div>
+                     Artikelen: Boerenmarkt / Bioversmarkt <br> Geopend op de volgende dagen: Zo 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7dc67e60f31e540306b630d0413605f8 = L.marker(
+                [52.3858414, 4.8711061],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_7dc67e60f31e540306b630d0413605f8.bindTooltip(
+                `<div>
+                     Artikelen: Kunst / Antiek en curiosa <br> Geopend op de volgende dagen: Zo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c46ee250f9a408ed0af868b0ea45e45 = L.marker(
+                [52.3696136, 4.851038],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_5c46ee250f9a408ed0af868b0ea45e45.bindTooltip(
+                `<div>
+                     Artikelen: Boerenmarkt / Bioversmarkt <br> Geopend op de volgende dagen: Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22c052822a0d4f337fe6e3fd429ad6be = L.marker(
+                [52.3430481, 4.884614],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_22c052822a0d4f337fe6e3fd429ad6be.bindTooltip(
+                `<div>
+                     Artikelen: Boerenmarkt / Bioversmarkt <br> Geopend op de volgende dagen: Zo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cea0162de97380dffe65a507d37c54d6 = L.marker(
+                [52.3497734, 5.0146689],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_cea0162de97380dffe65a507d37c54d6.bindTooltip(
+                `<div>
+                     Artikelen: Kunst / Antiek en curiosa <br> Geopend op de volgende dagen: Zo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7aff1542adcde29a2d1d6fb783dca918 = L.marker(
+                [52.3670998, 4.8691049],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_7aff1542adcde29a2d1d6fb783dca918.bindTooltip(
+                `<div>
+                     Artikelen: Boerenmarkt / Bioversmarkt <br> Geopend op de volgende dagen: Ma Di Wo Do Vr Za Zo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77b181644e5b18405c2ef3576fcdacd7 = L.marker(
+                [52.3554268, 4.8758378],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_77b181644e5b18405c2ef3576fcdacd7.bindTooltip(
+                `<div>
+                     Artikelen: Boerenmarkt / Bioversmarkt <br> Geopend op de volgende dagen: Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efc2fdcde47babbe7abf94dc9a9ec200 = L.marker(
+                [52.3570404, 4.9909739],
+                {}
+            ).addTo(map_36f9f5b7b48b3bc89e9974ebc6d59523);
+        
+    
+            marker_efc2fdcde47babbe7abf94dc9a9ec200.bindTooltip(
+                `<div>
+                     Artikelen: Boerenmarkt / Bioversmarkt <br> Geopend op de volgende dagen: Za
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
