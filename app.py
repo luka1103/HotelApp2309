@@ -4,6 +4,7 @@ import felixprobeersels
 import lukaprobeersels
 import jeroenprobeer
 import zaidtest
+import searchRestaurants
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -34,3 +35,8 @@ def methodejeroen(mijngegeven):
 @cross_origin()
 def methodezaid():
     return zaidtest.functiezaid()
+
+@app.route("/jeroen2/<mijngegeven>")
+@cross_origin()
+def methodejeroen2(mijngegeven):
+    return searchRestaurants.search_csv_for_keywords(mijngegeven)
