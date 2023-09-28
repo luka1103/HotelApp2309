@@ -21,10 +21,10 @@ def helloWorld():
 def methodefelix(eengegeven):
     return felixprobeersels.functiefelix(eengegeven)
 
-@app.route("/luka")
+@app.route("/luka/<mijngegeven>")
 @cross_origin()
-def methodeluka():
-    return lukaprobeersels.functieluka()
+def methodeluka(mijngegeven):
+    return lukaprobeersels.functieluka(mijngegeven)
 
 @app.route("/jeroen/<mijngegeven>")
 @cross_origin()

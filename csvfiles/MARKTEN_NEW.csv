@@ -1,0 +1,46 @@
+﻿OBJECTNUMMER,Locatie,Artikelen,SELECTIE,FILTER_DAG,Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag,Dagen,Gemeente,Foto,Website,Meer_informatie,Plattegrond,Openstaande_plaatsen,Longitude,Latitude
+8,Waterlooplein,Kunst / Antiek en curiosa,KUNSTANTIEK,Ma|Di|Wo|Do|Vr|Za|,09.00-17.00 uur,09.00-17.00 uur,09.00-17.00 uur,09.00-17.00 uur,09.00-17.00 uur,09.00-17.00 uur,,Di - Do - Ma - Vr - Wo - Za,Ja,,,,Waterlooplein COVID plattegrond.pdf,,4.9017482,52.3683624
+9,Albert Cuypmarkt,Algemene waren,ALGEMEEN,Ma|Di|Wo|Do|Vr|Za,10.00-17.00 uur ,10.00-17.00 uur,10.00-17.00 uur,10.00-17.00 uur,10.00-17.00 uur,10.00-17.00 uur,,Ma - Di - Wo - Do - Vr - Za,Ja,fruitstala.cuypmarktmaart2007.jpg,www.albertcuypmarkt.nl,,,,4.8908691,52.3550148
+10,Bos en Lommerplein,Algemene waren,ALGEMEEN,Di|Wo|Do|Vr|Za,,9.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,,Di - Wo - Do - Vr - Za,Ja,boslommerplein_004_29mei2007_e_v_eis.jpg,,,,,4.8457112,52.3784904
+11,Buikslotermeerplein,Algemene waren,ALGEMEEN,Ma|Di|Wo|Do|Vr|Za|,12.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,,Di - Do - Ma - Vr - Wo - Za,Ja,,,,Plattegrond Buikslotermeerplein.pdf,,4.9364452,52.3986168
+12,Dappermarkt,Algemene waren,ALGEMEEN,Ma|Di|Wo|Do|Vr|Za,9.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,,Di - Do - Ma - Vr - Wo - Za,Ja,dappermarkt003-28mrt2007_e_v_eis.jpg,,www.dappermarkt.nl,,,4.9277439,52.3622246
+13,Anton de Komplein,Algemene waren,ALGEMEEN,Ma|Do|Vr,9.00-18.00 uur,,,9.00-18.00 uur,9.00-18.00 uur,,,Do - Ma - Vr,Ja,BC-de Kompleinmarkt16-06-14.2.jpg,,,,,4.956486,52.315426
+14,Kraaiennest,Algemene waren,ALGEMEEN,Di,,9.00-18.00 uur,,,,,,Di,Ja,,,,,,4.9790383,52.3167174
+16,Nieuwmarkt,Algemene waren,ALGEMEEN,Ma|Di|Wo|Do|Vr|Za,09.00-18.00 uur,09.00-18.00 uur,09.00-18.00 uur,09.00-18.00 uur,09.00-18.00 uur,09.00-18.00 uur,,Ma - Di - Wo - Do - Vr - Za,Ja,warenmarkt nieuwmarkt_18mrt2013_e_v_eis.jpg,,,,,4.900321,52.3725624
+18,Amstelveld,Bloemen en planten,BLOEMEN,Ma|,09.00-18.00 uur,,,,,,,Ma,Ja,,,,2020 Plattegrond wordt Amstelveld.pdf,,4.8975739,52.362381
+19,Ganzenhoef,Algemene waren,ALGEMEEN,Za,,,,,,9.00-18.00 uur,,Za,Ja,,,,,,4.9698755,52.322102
+20,Haarlemmerplein,Boerenmarkt / Bioversmarkt,BOERENMARKT,Wo,,,10.00-17.00 uur,,,,,Wo,Ja,boerenmarkt_haarlemmerplein_004_19mei2010-2a.jpg,,,,,4.8838201,52.3848801
+21,Lambertus Zijlplein,Algemene waren,ALGEMEEN,Ma,11.00-17.00 uur,,,,,,,Ma,Ja,,,,,,4.8010898,52.377964
+22,Lindengracht,Algemene waren,ALGEMEEN,Za,,,,,,09.00-17.00 uur,,Za,Ja,,,,,,4.8844528,52.3801651
+23,Nieuwmarkt,Boerenmarkt / Bioversmarkt,BOERENMARKT,Za,,,,,,09.00-16.00 uur,,Za,Ja,1. Boerenmarkt Nieuwmarkt Edwin van Eis 2010.jpg,,,,,4.9006319,52.3722267
+24,Noordermarkt,Boerenmarkt / Bioversmarkt,BOERENMARKT,Za|,,,,,,09.00-16.00 uur,,Za,Ja,,,,20200612 Plattegrond Noordermarkt Zaterdag.pdf,,4.8864808,52.3796158
+25,Noordermarkt,Algemene waren,ALGEMEEN,Ma|,09.00-16.00 uur,,,,,,,Ma,Ja,,,,20200612 Plattegrond Noordermarkt Maandag.pdf,,4.8864698,52.3794136
+26,Reigersbos,Algemene waren,ALGEMEEN,Wo,,,9.00-18.00 uur,,,,,Wo,Ja,,,,,,4.9755026,52.2970358
+27,Spui,Boeken,BOEKEN,Vr|,,,,,10.00-18.00 uur,,,Vr,Ja,,http://www.deboekenmarktophetspui.nl/,,2020 Plattegrond was & wordt Spui Boekenmarkt.pdf,,4.8897529,52.3687935
+28,Artplein Spui,Kunst / Antiek en curiosa,KUNSTANTIEK,Zo,,,,,,,10:00-18:00 (maart t/m december) ,Zo,Ja,spui-kunstmarktt-02_9nov2012_e_v_eis.jpg,www.artplein-spui.org,,,,4.8899941,52.3688469
+29,Tussen Meer,Algemene waren,ALGEMEEN,Di,,9.00-17.00 uur,,,,,,Di,Ja,,,,,,4.7954888,52.3570786
+31,Westerstraat,Algemene waren,ALGEMEEN,Ma|,09.00-13.00 uur,,,,,,,Ma,Ja,,,,westerstraat COVID19 opstelling.pdf,,4.88485,52.3786125
+32,Van Eesterenlaan,Boerenmarkt / Bioversmarkt,BOERENMARKT,Wo,,,12.00-17.00 uur,,,,,Wo,Ja,12. Van Eesterenlaan Biomarkt Edwin van Eis 2007.jpg,,,,,4.9384079,52.3724174
+33,Nieuwmarkt,Kunst / Antiek en curiosa,KUNSTANTIEK,Zo,,,,,,,mei-november 09.00-17.00 ,Zo,Ja,,,,,,4.9001708,52.3723831
+34,Singel,Bloemen en planten,BLOEMEN,Ma|Di|Wo|Do|Vr|Za,09.00-17.30 uur,09.00-17.30 uur,09.00-17.30 uur,09.00-17.30 uur,09.00-17.30 uur,11.00-17.30 uur,,Ma - Di - Wo - Do - Vr - Za,Ja,14. Singel Bloemenmarkt.jpg,,,,,4.8914161,52.3666916
+35,Nieuwezijds Voorburgwal,Postzegels en munten,POSTZEGELS,Wo|Za,,,09.00-16.00 uur,,,09.00-16.00 uur,,Wo - Za,Ja,,,,,,4.8902998,52.3713303
+37,Buikslotermeerplein Boerenmarkt,Boerenmarkt / Bioversmarkt,BOERENMARKT,Za,,,,,,9.00-17.00 uur,,Za,Ja,boerenmarkt mosveld.jpg,,,,,4.9397278,52.3985634
+43,Plein `40-`45,Algemene waren,ALGEMEEN,Di|Wo|Do|Vr|Za,,9.00-17.00 uur,9.00-17.00 uur,9.00-17.00 uur,9.00-17.00 uur,9.00-17.00 uur,,Di - Do - Vr - Wo - Za,Ja,markt_plein_40-45_04_mrt_2004.jpg,,,,,4.821625,52.380021
+44,Ten Katemarkt,Algemene waren,ALGEMEEN,Ma|Di|Wo|Do|Vr|Za,9.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,9.00-18.00 uur,,Di - Do - Ma - Vr - Wo - Za,Ja,ten_katemarkt_3_apr_2003.jpg,,,,,4.8672009,52.3664093
+45,Siermarkt,Algemene waren,ALGEMEEN,Wo,,,9.00-17.00 uur,,,,,Wo,Nee,,,,,,4.826431,52.355012
+46,Rembrandtplein,Kunst / Antiek en curiosa,KUNSTANTIEK,Zo,,,,,,,10.30-18.00 uur,Zo,Nee,13. Kunstmarkt Rembrandtplein maart 2013.jpg,,,,,4.89634,52.365958
+55,Stadionplein,Boerenmarkt / Bioversmarkt,BOERENMARKT,Za,,,,,,9.00-17.00 uur,,Za,Ja,,,,,,4.8577271,52.3439409
+56,Pekmarkt,Algemene waren,ALGEMEEN,Wo|Vr|Za|,,,9.00-16.30 uur,,9.00-16.30 uur,9.00-16.30 uur,,Vr - Wo - Za,Ja,,,,Plattegrond_Van_der_Pekstraat.pdf,,4.9104171,52.389843
+57,Pekmarkt,Boerenmarkt / Bioversmarkt,BOERENMARKT,Vr,,,,,9.00-16.30 uur,,,Vr,Ja,,,,,,4.9098272,52.3889389
+58,Pekmarkt,Kunst / Antiek en curiosa,KUNSTANTIEK,Za,,,,,,9.00-16.30 uur,,Za,Ja,,,,,,4.9109311,52.3906174
+60,Albert Cuyp / Eerste Sweelinckstraat,Boerenmarkt / Bioversmarkt,BOERENMARKT,Wo,,,10-17 uur,,,,,Wo,Nee,,www.albertcuypmarkt.nl/,,,,4.8971772,52.3567314
+62,Pure Markt Amstelpark,Algemene waren,ALGEMEEN,Zo,,,,,,,"11:00-18:00 uur (2e zondag vd maand, niet in nov jan feb mrt)",Zo,Nee,,www.puremarkt.nl,,,,4.8916841,52.3322105
+64,IJ-hallen,Kunst / Antiek en curiosa,KUNSTANTIEK,Za|Zo,,,,,,09:00-16:30 uur (maandelijks),09:00-16:30 uur (maandelijks),Za - Zo,Nee,,www.ijhallen.nl,,,,4.8942642,52.4020004
+65,Pure Markt Frankendael,Boerenmarkt / Bioversmarkt,BOERENMARKT,Zo|,,,,,,,"11:00-18:00 (laatste zondag vd maand, niet nov, jan, feb)",Zo,Nee,,www.puremarkt.nl,,,,4.9296989,52.3511405
+66,Sunday Market,Kunst / Antiek en curiosa,KUNSTANTIEK,Zo,,,,,,,12:00-18:00 (eerste zondag vd maand),Zo,Nee,,http://www.sundaymarket.nl/,,,,4.8711061,52.3858414
+67,Mercatormarkt,Boerenmarkt / Bioversmarkt,BOERENMARKT,Za,,,,,,10:00-17:00 (zie website voor data),,Za,Nee,,http://www.mercatormarkt.nl/,,,,4.851038,52.3696136
+76,Pure Markt Beatrixpark,Boerenmarkt / Bioversmarkt,BOERENMARKT,Zo,,,,,,,11:00-18:00 (zie website voor data),Zo,Nee,,www.puremarkt.nl,,,,4.884614,52.3430481
+77,Trek je klep open - Kofferbakmarkt Blijburg,Kunst / Antiek en curiosa,KUNSTANTIEK,Zo,,,,,,,"10:00-16:00 (laatste zondag in apr, t/m sep)",Zo,Nee,,http://debrugkrant.nl/agenda/trek-je-klep-open-de-kofferbakmarkt-van-blijburg-2012-04-29/,,,,5.0146689,52.3497734
+79,De Foodhallen,Boerenmarkt / Bioversmarkt,BOERENMARKT,Ma|Di|Wo|Do|Vr|Za|Zo,11:00-20:00,11:00-20:00,11:00-20:00,11:00-21:00,11:00-21:00,11:00-21:00,11:00-20:00,Di - Do - Ma - Vr - Wo - Za - Zo,Nee,,https://nl-nl.facebook.com/foodhallen,,,,4.8691049,52.3670998
+121,ZuiderMRKT,Boerenmarkt / Bioversmarkt,BOERENMARKT,Za,,,,,,9:30-17:00 uur,,Za,Nee,,www.zuidermrkt.nl,,,,4.8758378,52.3554268
+122,REURING markt op IJburg,Boerenmarkt / Bioversmarkt,BOERENMARKT,Za,,,,,,09:00 - 16:00 uur,,Za,Ja,,www.reuringmarkt.nl,Joris Ivensplein,,,4.9909739,52.3570404
