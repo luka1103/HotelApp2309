@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_88b3529b06b004d02b2438ff1c531296 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_88b3529b06b004d02b2438ff1c531296" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_88b3529b06b004d02b2438ff1c531296 = L.map(
+                "map_88b3529b06b004d02b2438ff1c531296",
+                {
+                    center: [52.377956, 4.89707],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fb847d7fb5079fac74c3a5104151eb13 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            var marker_cf334b57a2a7d698583634974bba4d0d = L.marker(
+                [52.3683624, 4.9017482],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_cf334b57a2a7d698583634974bba4d0d.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Waterlooplein <br><b>Artikelen:</b> Kunst / Antiek en curiosa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa815e6dea601155fd88209a6bf66ab2 = L.marker(
+                [52.3550148, 4.8908691],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_aa815e6dea601155fd88209a6bf66ab2.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Albert Cuypmarkt <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d1ef2dc8adbeae0042568d880a6097c = L.marker(
+                [52.3784904, 4.8457112],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_7d1ef2dc8adbeae0042568d880a6097c.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Bos en Lommerplein <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1d04f3945ef212722974c9719428e22 = L.marker(
+                [52.3986168, 4.9364452],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_d1d04f3945ef212722974c9719428e22.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Buikslotermeerplein <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_818005dcec7742ad89fd7b560f3a7bd3 = L.marker(
+                [52.3622246, 4.9277439],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_818005dcec7742ad89fd7b560f3a7bd3.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Dappermarkt <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ddcb5be6c94f4c9d8dd22ff315af25b = L.marker(
+                [52.315426, 4.956486],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_3ddcb5be6c94f4c9d8dd22ff315af25b.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Anton de Komplein <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e34a9836a9889b6fcf1f7d987457dafe = L.marker(
+                [52.3167174, 4.9790383],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_e34a9836a9889b6fcf1f7d987457dafe.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Kraaiennest <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_094667a37538913bce61f89640de3d25 = L.marker(
+                [52.3725624, 4.900321],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_094667a37538913bce61f89640de3d25.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Nieuwmarkt <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8192dc22dd9f5b378f9739b8d9f49799 = L.marker(
+                [52.362381, 4.8975739],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_8192dc22dd9f5b378f9739b8d9f49799.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Amstelveld <br><b>Artikelen:</b> Bloemen en planten
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d61aaa9c91c129301b3236413daf88ce = L.marker(
+                [52.322102, 4.9698755],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_d61aaa9c91c129301b3236413daf88ce.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Ganzenhoef <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1a9b5bbca5234a8084d7fea16772dbc = L.marker(
+                [52.3848801, 4.8838201],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_c1a9b5bbca5234a8084d7fea16772dbc.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Haarlemmerplein <br><b>Artikelen:</b> Boerenmarkt / Bioversmarkt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd1d0c20ce804adb954543fa307a83a8 = L.marker(
+                [52.377964, 4.8010898],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_bd1d0c20ce804adb954543fa307a83a8.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Lambertus Zijlplein <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d0d5ee6981c9e8dfd5deb5ec39f51b4 = L.marker(
+                [52.3801651, 4.8844528],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_7d0d5ee6981c9e8dfd5deb5ec39f51b4.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Lindengracht <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4db571234c95e4186d264d6b20c6763 = L.marker(
+                [52.3722267, 4.9006319],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_a4db571234c95e4186d264d6b20c6763.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Nieuwmarkt <br><b>Artikelen:</b> Boerenmarkt / Bioversmarkt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95e80a7f163161e79630ec7343c362e3 = L.marker(
+                [52.3796158, 4.8864808],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_95e80a7f163161e79630ec7343c362e3.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Noordermarkt <br><b>Artikelen:</b> Boerenmarkt / Bioversmarkt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f0eb4c364e8570062648e3d57674d9f = L.marker(
+                [52.3794136, 4.8864698],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_1f0eb4c364e8570062648e3d57674d9f.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Noordermarkt <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93ed29609acf56ae46e33846edcafd79 = L.marker(
+                [52.2970358, 4.9755026],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_93ed29609acf56ae46e33846edcafd79.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Reigersbos <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d87e8b99cd299d03ffe379f147e17d67 = L.marker(
+                [52.3687935, 4.8897529],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_d87e8b99cd299d03ffe379f147e17d67.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Spui <br><b>Artikelen:</b> Boeken
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_218acf8313a84df89a6a629039ec03de = L.marker(
+                [52.3688469, 4.8899941],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_218acf8313a84df89a6a629039ec03de.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Artplein Spui <br><b>Artikelen:</b> Kunst / Antiek en curiosa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e9ef9af7c6a541cfb035bcffff33f30 = L.marker(
+                [52.3570786, 4.7954888],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_5e9ef9af7c6a541cfb035bcffff33f30.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Tussen Meer <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8afd267e516a7c85c1955f696528707d = L.marker(
+                [52.3786125, 4.88485],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_8afd267e516a7c85c1955f696528707d.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Westerstraat <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_714f1c8daa2cdd5bb5760347e567f773 = L.marker(
+                [52.3724174, 4.9384079],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_714f1c8daa2cdd5bb5760347e567f773.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Van Eesterenlaan <br><b>Artikelen:</b> Boerenmarkt / Bioversmarkt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05cc72818a0b8dda74f6f5743f01d1c2 = L.marker(
+                [52.3723831, 4.9001708],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_05cc72818a0b8dda74f6f5743f01d1c2.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Nieuwmarkt <br><b>Artikelen:</b> Kunst / Antiek en curiosa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aea0e942f29fe88ce2a163b8a73de27e = L.marker(
+                [52.3666916, 4.8914161],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_aea0e942f29fe88ce2a163b8a73de27e.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Singel <br><b>Artikelen:</b> Bloemen en planten
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7904aeb63adb05fb4398459b4dca15f4 = L.marker(
+                [52.3713303, 4.8902998],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_7904aeb63adb05fb4398459b4dca15f4.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Nieuwezijds Voorburgwal <br><b>Artikelen:</b> Postzegels en munten
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6057e7801740eb35668836d8e86d0368 = L.marker(
+                [52.3985634, 4.9397278],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_6057e7801740eb35668836d8e86d0368.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Buikslotermeerplein Boerenmarkt <br><b>Artikelen:</b> Boerenmarkt / Bioversmarkt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b0ebc236a5c4224d24bdc523f89be19 = L.marker(
+                [52.380021, 4.821625],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_1b0ebc236a5c4224d24bdc523f89be19.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Plein 40-45 <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4693a762e5f46f00bb44acecc3e21e3 = L.marker(
+                [52.3664093, 4.8672009],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_e4693a762e5f46f00bb44acecc3e21e3.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Ten Katemarkt <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fff8c6b0f0e32570fb5b1022d40e3ccd = L.marker(
+                [52.355012, 4.826431],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_fff8c6b0f0e32570fb5b1022d40e3ccd.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Siermarkt <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5145274531d4145629d4bdf60d9607eb = L.marker(
+                [52.365958, 4.89634],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_5145274531d4145629d4bdf60d9607eb.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Rembrandtplein <br><b>Artikelen:</b> Kunst / Antiek en curiosa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62621f32426329d2642651193ca41602 = L.marker(
+                [52.3439409, 4.8577271],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_62621f32426329d2642651193ca41602.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Stadionplein <br><b>Artikelen:</b> Boerenmarkt / Bioversmarkt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7ce177c526bc154f14111939b60f33d = L.marker(
+                [52.389843, 4.9104171],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_b7ce177c526bc154f14111939b60f33d.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Pekmarkt <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01cdc467a7ce0741da3e4246668a0b66 = L.marker(
+                [52.3889389, 4.9098272],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_01cdc467a7ce0741da3e4246668a0b66.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Pekmarkt <br><b>Artikelen:</b> Boerenmarkt / Bioversmarkt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20931dbe344a895816d876805832955b = L.marker(
+                [52.3906174, 4.9109311],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_20931dbe344a895816d876805832955b.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Pekmarkt <br><b>Artikelen:</b> Kunst / Antiek en curiosa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_145ad0901bfe4c3482cbc3065ac5792a = L.marker(
+                [52.3567314, 4.8971772],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_145ad0901bfe4c3482cbc3065ac5792a.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Albert Cuyp / Eerste Sweelinckstraat <br><b>Artikelen:</b> Boerenmarkt / Bioversmarkt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41fcd52016d67e41443065de1bd27ac3 = L.marker(
+                [52.3322105, 4.8916841],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_41fcd52016d67e41443065de1bd27ac3.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Pure Markt Amstelpark <br><b>Artikelen:</b> Algemene waren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3def3a204de790bafc5e8c73b5cbba2b = L.marker(
+                [52.4020004, 4.8942642],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_3def3a204de790bafc5e8c73b5cbba2b.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> IJ-hallen <br><b>Artikelen:</b> Kunst / Antiek en curiosa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d13271a823934397be1f178d5199748 = L.marker(
+                [52.3511405, 4.9296989],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_5d13271a823934397be1f178d5199748.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Pure Markt Frankendael <br><b>Artikelen:</b> Boerenmarkt / Bioversmarkt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a21916a77000c7518ba7ca87a9a21fae = L.marker(
+                [52.3858414, 4.8711061],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_a21916a77000c7518ba7ca87a9a21fae.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Sunday Market <br><b>Artikelen:</b> Kunst / Antiek en curiosa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db5f7282d2335297aebf77fb59beeb98 = L.marker(
+                [52.3696136, 4.851038],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_db5f7282d2335297aebf77fb59beeb98.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Mercatormarkt <br><b>Artikelen:</b> Boerenmarkt / Bioversmarkt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1689f09ef0d5384b14a32fd6dca5c891 = L.marker(
+                [52.3430481, 4.884614],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_1689f09ef0d5384b14a32fd6dca5c891.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Pure Markt Beatrixpark <br><b>Artikelen:</b> Boerenmarkt / Bioversmarkt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24ea795a98f24092ea2ed096bb618a7d = L.marker(
+                [52.3497734, 5.0146689],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_24ea795a98f24092ea2ed096bb618a7d.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> Trek je klep open - Kofferbakmarkt Blijburg <br><b>Artikelen:</b> Kunst / Antiek en curiosa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b742b55b4b30223c862f055f9c42457 = L.marker(
+                [52.3670998, 4.8691049],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_8b742b55b4b30223c862f055f9c42457.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> De Foodhallen <br><b>Artikelen:</b> Boerenmarkt / Bioversmarkt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb82752ba1dde8704403f1a433d2695f = L.marker(
+                [52.3554268, 4.8758378],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_cb82752ba1dde8704403f1a433d2695f.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> ZuiderMRKT <br><b>Artikelen:</b> Boerenmarkt / Bioversmarkt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91fe3680ac66edce1ca41ab3fc649fea = L.marker(
+                [52.3570404, 4.9909739],
+                {}
+            ).addTo(map_88b3529b06b004d02b2438ff1c531296);
+        
+    
+            marker_91fe3680ac66edce1ca41ab3fc649fea.bindTooltip(
+                `<div>
+                     <b>Locatie:</b> REURING markt op IJburg <br><b>Artikelen:</b> Boerenmarkt / Bioversmarkt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
