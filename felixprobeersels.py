@@ -32,5 +32,3 @@ def functiefelix2Netter(deparameter):
     parsed = loads(result)
     return dumps(parsed, indent=4) 
 
-
-print(functiefelix2Netter("Waterloo"))
