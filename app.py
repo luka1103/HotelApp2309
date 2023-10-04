@@ -5,6 +5,8 @@ import lukaprobeersels
 import jeroenprobeer
 import zaidtest
 import searchRestaurants
+import marktKaart
+from flask import render_template,jsonify, request
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -26,6 +28,12 @@ def methodefelix(eengegeven):
 def methodeluka(mijngegeven):
     return lukaprobeersels.functieluka(mijngegeven)
 
+marktKaart.marktKaart()
+@app.route("/marktenkaart")
+@cross_origin()
+def methodemarktkaart():
+    return render_template('markten_kaart.html')
+
 @app.route("/jeroen/<mijngegeven>")
 @cross_origin()
 def methodejeroen(mijngegeven):
@@ -36,10 +44,10 @@ def methodejeroen(mijngegeven):
 def methodejeroen2(mijngegeven):
     return searchRestaurants.search_csv_for_keywords(mijngegeven)
 
-@app.route("/Zaid2/<mijngegeven>")
+@app.route("/Zaid2")
 @cross_origin()
-def functiezaid2(mijngegeven):
-    return zaidtest.functiezaid2(mijngegeven)
+def functiezaid2():
+    return zaidtest.functiezaid2()
 
 @app.route("/Zaid3/<mijngegeven>")
 @cross_origin()

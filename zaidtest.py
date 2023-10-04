@@ -1,7 +1,7 @@
 import pandas as pd
 import csv
 import folium
-from flask import Flask, render_template
+from flask import Flask, render_template,jsonify, request
 
 
 
@@ -28,7 +28,7 @@ def functiezaid2():
    records = [ ]
 
    bestand = pd.read_csv("csvfiles/MuseaGalleries.csv", sep=";", encoding='latin-1')
-   print(bestand)
+   #print(bestand)
    data = bestand.to_dict(orient='records')
    museum_map = folium.Map(location=[52.377956, 4.897070], zoom_start=15)
 
