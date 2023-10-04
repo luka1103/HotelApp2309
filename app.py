@@ -26,10 +26,10 @@ def methodefelix(eengegeven):
 def methodeluka(mijngegeven):
     return lukaprobeersels.functieluka(mijngegeven)
 
-@app.route("/jeroen/<mijngegeven>")
+@app.route("/jeroen/<invoer>")
 @cross_origin()
-def methodejeroen(mijngegeven):
-    return jeroenprobeer.jeroenfunctie(mijngegeven)
+def methodejeroen(invoer):
+    return jeroenprobeer.jeroenfunctie(invoer)
 
 @app.route("/zaid")
 @cross_origin()
