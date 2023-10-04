@@ -23,7 +23,7 @@ def search_csv_for_keywords(invoer):
             city= str(row.get("City", "")).lower()
             cuisine_style = str(row.get("Cuisine Style", "")).lower()
             
-            if keywords_input in cuisine_style:
+            if keywords_input in cuisine_style or keywords_input in city:
                 lijstid.append(index)
         results_dataframe = bestand.loc[lijstid].copy()
             
