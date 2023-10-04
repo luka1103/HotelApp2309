@@ -36,8 +36,8 @@ def methodemarktkaart():
 
 @app.route("/jeroen/<mijngegeven>")
 @cross_origin()
-def methodejeroen(mijngegeven):
-    return jeroenprobeer.jeroenfunctie(mijngegeven)
+def methodejeroen(invoer):
+    return jeroenprobeer.jeroenfunctie(invoer)
 
 @app.route("/jeroen2/<mijngegeven>")
 @cross_origin()
