@@ -4,7 +4,7 @@ import felixprobeersels
 import lukaprobeersels
 import jeroenprobeer
 import zaidtest
-#import searchRestaurants
+import searchRestaurants
 import marktKaart
 from flask import render_template
 
@@ -34,15 +34,15 @@ def methodemarktkaart():
     marktKaart.marktKaart()
     return render_template('markten_kaart.html')
 
-#@app.route("/jeroen/<mijngegeven>")
-#@cross_origin()
-#def methodejeroen(invoer):
-#    return jeroenprobeer.jeroenfunctie(invoer)
+@app.route("/jeroen/<mijngegeven>")
+@cross_origin()
+def methodejeroen(mijngegeven):
+    return jeroenprobeer.jeroenfunctie(mijngegeven)
 
-#@app.route("/jeroen2/<mijngegeven>")
-#@cross_origin()
-#def methodejeroen2(mijngegeven):
-#    return searchRestaurants.search_csv_for_keywords(mijngegeven)
+@app.route("/jeroen2/<invoer>")
+@cross_origin()
+def methodejeroen2(invoer):
+    return searchRestaurants.search_csv_for_keywords(invoer)
 
 @app.route("/Zaid2/<mijngegeven>")
 @cross_origin()
