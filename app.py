@@ -36,13 +36,13 @@ def methodemarktkaart():
 
 @app.route("/jeroen/<mijngegeven>")
 @cross_origin()
-def methodejeroen(invoer):
-    return jeroenprobeer.jeroenfunctie(invoer)
+def methodejeroen(mijngegeven):
+    return jeroenprobeer.jeroenfunctie(mijngegeven)
 
-@app.route("/jeroen2/<mijngegeven>")
+@app.route("/jeroen2/<invoer>")
 @cross_origin()
-def methodejeroen2(mijngegeven):
-    return searchRestaurants.search_csv_for_keywords(mijngegeven)
+def methodejeroen2(invoer):
+    return searchRestaurants.search_csv_for_keywords(invoer)
 
 @app.route("/Zaid2/<mijngegeven>")
 @cross_origin()
