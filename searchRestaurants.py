@@ -1,3 +1,4 @@
+import keyword
 import pandas as pd
 from json import loads,dumps
 import matplotlib.pyplot as plt
@@ -7,12 +8,13 @@ def search_csv_for_keywords(invoer):
         
     #Het CSV bestand lezen en in een DataFrame stoppen
         
-        bestand = pd.read_csv("/Users/jeroenhadderingh/Desktop/hotelapp2309/HotelApp2309/csvfiles/TA_restaurants_curated.csv")
+        bestand = pd.read_csv("csvfiles/TA_restaurants_curated.csv")
         lijstid = []
         
     #De gebruiker prompten om keywords in te vullen
     
-        keywords_input = invoer
+        keywords_input = invoer.lower()
+        search_keywords = [keyword.strip() for keyword in keywords_input.split(",")]
         
     #Lege DataFrame maken om de rijen op te slaan
     
@@ -23,7 +25,7 @@ def search_csv_for_keywords(invoer):
             city= str(row.get("City", "")).lower()
             cuisine_style = str(row.get("Cuisine Style", "")).lower()
             
-            if keywords_input in cuisine_style or keywords_input in city:
+            if all(keyword in city or keyword in cuisine_style for keyword in search_keywords):
                 lijstid.append(index)
         results_dataframe = bestand.loc[lijstid].copy()
             
@@ -47,7 +49,7 @@ def search_csv_for_keywords(invoer):
 
 def restaurantNumbers(data_file_path, rating_treshold=4.0):
 
-  bestand = pd.read_csv("/Users/jeroenhadderingh/Desktop/hotelapp2309/HotelApp2309/csvfiles/TA_restaurants_curated.csv")
+  bestand = pd.read_csv("csvfiles/TA_restaurants_curated.csv")
   highly_rated_restaurants= bestand[bestand["Rating"] > rating_treshold]
   city_counts = highly_rated_restaurants["City"].value_counts()
   
