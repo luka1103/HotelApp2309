@@ -6,6 +6,7 @@ import jeroenprobeer
 import zaidtest
 import searchRestaurants
 import marktKaart
+import markersKaart
 from flask import render_template,jsonify, request
 
 app = Flask(__name__)
@@ -33,6 +34,11 @@ def methodeluka(mijngegeven):
 def methodemarktkaart():
     marktKaart.marktKaart()
     return render_template('markten_kaart.html')
+
+@app.route("/longlat/<bestandsnaam>")
+@cross_origin()
+def methodelonglat(bestandsnaam):
+    return markersKaart.longLat(bestandsnaam)
 
 @app.route("/jeroen/<mijngegeven>")
 @cross_origin()
