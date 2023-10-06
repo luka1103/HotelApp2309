@@ -6,7 +6,7 @@ import jeroenprobeer
 import zaidtest
 import searchRestaurants
 import marktKaart
-from flask import render_template
+from flask import render_template,jsonify, request
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -44,15 +44,10 @@ def methodejeroen(mijngegeven):
 def methodejeroen2(invoer):
     return searchRestaurants.search_csv_for_keywords(invoer)
 
-@app.route("/jeroen3/<mijngegeven>")
+@app.route("/Zaid2")
 @cross_origin()
-def methodejeroen3(mijngegeven):
-    return searchRestaurants.filter_and_dropdown(mijngegeven)
-
-@app.route("/Zaid2/<mijngegeven>")
-@cross_origin()
-def functiezaid2(mijngegeven):
-    return zaidtest.functiezaid2(mijngegeven)
+def functiezaid2():
+    return zaidtest.functiezaid2()
 
 @app.route("/Zaid3/<mijngegeven>")
 @cross_origin()
@@ -68,3 +63,8 @@ def functiezaid4index(mijngegeven):
 @cross_origin()
 def fuctiezaid5zoek_in_csv(mijngegeven):
     return zaidtest.functiezaid4index(mijngegeven)
+
+@app.route("/ZoekLocatieMusea/<invoer>")
+@cross_origin()
+def zoek_locatie_in_CSV():
+    return zaidtest.functie_zoek_locatie_in_CSV()
