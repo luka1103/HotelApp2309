@@ -16,6 +16,9 @@ def marktKaart():
 
    museum_map = folium.Map(location=[52.377956, 4.897070], zoom_start=10)
 
+   #folium.Marker([52.377956, 4.897070], popup='Timberline Lodge',icon=folium.Icon(color='green')).add_to(museum_map)
+   #museum_map.save('templates/markten_kaart.html') 
+
    for row in data: 
         records.append({key: row[key] for key in keys})
         latitude = float(row['Latitude'])
@@ -25,8 +28,17 @@ def marktKaart():
         Dagen = row['FILTER_DAG'].replace('|', ' ')
 
         tooltip = f'Artikelen: {Artikelen} <br> Geopend op de volgende dagen: {Dagen}'
-
-        folium.Marker([latitude, longitude], tooltip=tooltip).add_to(museum_map)
-        museum_map.save('markten_kaart.html') 
         
-marktKaart()
+        if Artikelen.startswith('Algemene'):
+         folium.Marker([latitude, longitude], tooltip=tooltip, icon=folium.Icon(color='blue', icon='store', prefix='fa')).add_to(museum_map)
+        elif Artikelen.startswith('Kunst'):
+         folium.Marker([latitude, longitude], tooltip=tooltip, icon=folium.Icon(color='purple', icon='palette', prefix='fa')).add_to(museum_map)
+        elif Artikelen.startswith('Boeren'):
+         folium.Marker([latitude, longitude], tooltip=tooltip, icon=folium.Icon(color='green', icon='tractor', prefix='fa')).add_to(museum_map)
+        elif Artikelen.startswith('Boeken'):
+         folium.Marker([latitude, longitude], tooltip=tooltip, icon=folium.Icon(color='gray', icon='book', prefix='fa')).add_to(museum_map)
+        elif Artikelen.startswith('Postzegels'):
+         folium.Marker([latitude, longitude], tooltip=tooltip, icon=folium.Icon(color='red', icon='envelope', prefix='fa')).add_to(museum_map)
+        else:
+         folium.Marker([latitude, longitude], tooltip=tooltip, icon=folium.Icon(color='orange', icon='seedling', prefix='fa')).add_to(museum_map)
+        museum_map.save('templates/markten_kaart.html') 

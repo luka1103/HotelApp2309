@@ -28,10 +28,10 @@ def methodefelix(eengegeven):
 def methodeluka(mijngegeven):
     return lukaprobeersels.functieluka(mijngegeven)
 
-marktKaart.marktKaart()
 @app.route("/marktenkaart")
 @cross_origin()
 def methodemarktkaart():
+    marktKaart.marktKaart()
     return render_template('markten_kaart.html')
 
 @app.route("/jeroen/<mijngegeven>")
@@ -39,10 +39,10 @@ def methodemarktkaart():
 def methodejeroen(mijngegeven):
     return jeroenprobeer.jeroenfunctie(mijngegeven)
 
-@app.route("/jeroen2/<mijngegeven>")
+@app.route("/jeroen2/<invoer>")
 @cross_origin()
-def methodejeroen2(mijngegeven):
-    return searchRestaurants.search_csv_for_keywords(mijngegeven)
+def methodejeroen2(invoer):
+    return searchRestaurants.search_csv_for_keywords(invoer)
 
 @app.route("/Zaid2")
 @cross_origin()
@@ -63,3 +63,8 @@ def functiezaid4index(mijngegeven):
 @cross_origin()
 def fuctiezaid5zoek_in_csv(mijngegeven):
     return zaidtest.functiezaid4index(mijngegeven)
+
+@app.route("/ZoekLocatieMusea/<invoer>")
+@cross_origin()
+def zoek_locatie_in_CSV():
+    return zaidtest.functie_zoek_locatie_in_CSV()
