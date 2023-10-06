@@ -20,7 +20,7 @@ def search_csv_for_keywords(invoer):
     
         results_dataframe = pd.DataFrame(columns=bestand.columns)
         
-    #Door de dataframe heen loopen op zoek naar keywords in cuisine styles
+    #Door de dataframe heen loopen op zoek naar keywords in cuisine styles en cities
         for index, row in bestand.iterrows():
             city= str(row.get("City", "")).lower()
             cuisine_style = str(row.get("Cuisine Style", "")).lower()
@@ -44,8 +44,7 @@ def search_csv_for_keywords(invoer):
                 
     result = results_dataframe.to_json(orient="records")
     parsed = loads(result)
-    return dumps(parsed, indent=4)           
-
+    return dumps(parsed, indent=4)  
 
 def restaurantNumbers(data_file_path, rating_treshold=4.0):
 
@@ -69,3 +68,24 @@ rating_treshold = 4.0
 city_counts = restaurantNumbers("/Users/jeroenhadderingh/Desktop/hotelapp2309/HotelApp2309/csvfiles/TA_restaurants_curated.csv", rating_treshold)
 print(f"Highly rated City Counts (rating > {rating_treshold}):")
 print(city_counts)
+
+def filter_and_dropdown(price_range):
+    
+    #csv bestand lezen
+    df= pd.read_csv("csvfiles/TA_restaurants_curated.csv")
+    
+    #Amsterdam als stad filteren
+    amsterdam_restaurants = df[df["City"] == "Amsterdam"]
+    
+    #Lege lijst voor index
+    legelijst_prijs = []
+    
+    #Loopen door amsterdam_restaurants voor alle prijs indicaties
+    for i, ad in amsterdam_restaurants.iterrows():
+        if str(ad["Price Range"]) == price_range:
+            legelijst_prijs.append(i)
+    
+    leegDataframe = df.loc[legelijst_prijs].copy()
+    result = leegDataframe.to_json(orient="records")
+    parsed = loads(result)
+    return dumps(parsed, indent=4) 
