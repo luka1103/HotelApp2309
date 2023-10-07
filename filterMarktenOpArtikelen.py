@@ -2,9 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from json import loads, dumps
 from flask import jsonify
-import marktKaart
 
-def functieluka(artikelen):
+def filter(artikelen):
 
   bestand = pd.read_csv("csvfiles/MARKTEN.csv", sep=";", encoding='latin-1')
   legelijst = []

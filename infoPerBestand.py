@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from json import loads, dumps
 from flask import jsonify
 
-def longLat(bestandsnaam):
+def alleInfo(bestandsnaam):
   separator = ";"
   if bestandsnaam == "MARKTEN_NEW.csv":
     separator = ","

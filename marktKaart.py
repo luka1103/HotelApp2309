@@ -8,16 +8,13 @@ Created on Wed Sep 27 13:11:07 2023
 import pandas as pd
 import folium
 
-def marktKaart():
+def maakKaart():
    keys = ('Latitude','Longitude')
    records = [ ]
    bestand = pd.read_csv("csvfiles/MARKTEN_NEW.csv", sep=",", encoding="latin-1")
    data = bestand.to_dict(orient='records')
 
    museum_map = folium.Map(location=[52.377956, 4.897070], zoom_start=10)
-
-   #folium.Marker([52.377956, 4.897070], popup='Timberline Lodge',icon=folium.Icon(color='green')).add_to(museum_map)
-   #museum_map.save('templates/markten_kaart.html') 
 
    for row in data: 
         records.append({key: row[key] for key in keys})
