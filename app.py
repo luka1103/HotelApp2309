@@ -48,6 +48,11 @@ def methodejeroen(mijngegeven):
 def methodejeroen2(invoer):
     return searchRestaurants.search_csv_for_keywords(invoer)
 
+@app.route("/jeroen3/<mijngegeven>")
+@cross_origin()
+def methodejeroen3(mijngegeven):
+    return searchRestaurants.filter_and_dropdown(mijngegeven)
+
 @app.route("/Zaid2")
 @cross_origin()
 def functiezaid2():
