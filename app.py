@@ -1,12 +1,12 @@
 from flask import Flask
 from flask_cors import CORS, cross_origin
 import felixprobeersels
-import lukaprobeersels
+import filterMarktenOpArtikelen
 import jeroenprobeer
 import zaidtest
 import searchRestaurants
-import marktKaart
-from flask import render_template,jsonify, request
+import infoPerBestand
+from flask import render_template, jsonify, request
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -23,16 +23,20 @@ def helloWorld():
 def methodefelix(eengegeven):
     return felixprobeersels.functiefelix(eengegeven)
 
-@app.route("/luka/<mijngegeven>")
+@app.route("/markten/<artikelen>")
 @cross_origin()
-def methodeluka(mijngegeven):
-    return lukaprobeersels.functieluka(mijngegeven)
+def filterMarkten(artikelen):
+    return filterMarktenOpArtikelen.filter(artikelen)
 
 @app.route("/marktenkaart")
 @cross_origin()
-def methodemarktkaart():
-    marktKaart.marktKaart()
+def marktKaart():
     return render_template('markten_kaart.html')
+
+@app.route("/alleinfo/<bestandsnaam>")
+@cross_origin()
+def methodeAlleInfo(bestandsnaam):
+    return infoPerBestand.alleInfo(bestandsnaam)
 
 @app.route("/jeroen/<mijngegeven>")
 @cross_origin()
@@ -43,6 +47,11 @@ def methodejeroen(mijngegeven):
 @cross_origin()
 def methodejeroen2(invoer):
     return searchRestaurants.search_csv_for_keywords(invoer)
+
+@app.route("/jeroen3/<mijngegeven>")
+@cross_origin()
+def methodejeroen3(mijngegeven):
+    return searchRestaurants.filter_and_dropdown(mijngegeven)
 
 @app.route("/Zaid2")
 @cross_origin()
