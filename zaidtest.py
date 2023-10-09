@@ -47,18 +47,18 @@ def functiezaid2():
 
         folium.Marker([latitude, longitude], tooltip=tooltip).add_to(museum_map)
         museum_map.save('museum_map.html') 
-functiezaid2()
 
 
-def functie_zoek_locatie_in_CSV():
+def functie_zoek_locatie_in_CSV(invoer):
     
-    keywords = ['Title','Shortdiscription']
+    keywords = [invoer]
     matched_rows = [ ]    
 
     BestandCSV = pd.read_csv("csvfiles/MuseaGalleries.csv", sep=";", encoding='latin-1')
    
-    
+   
     for index,row in BestandCSV.iterrows(): 
+     
         title = str(row.get("Title", "")).lower()
         Short_description = str(row.get("Shortdescription", "")).lower()
 
@@ -67,16 +67,14 @@ def functie_zoek_locatie_in_CSV():
         
     if not matched_rows:
             print("\nNo matching rows found.")
-            return None
+            return "[]"
         
     results_dataframe = BestandCSV.loc[matched_rows].copy() 
 
     result = results_dataframe.to_json(orient="records")
-
+   
 
     return result
-resultaat = functie_zoek_locatie_in_CSV()
-print(resultaat)
     
 
 
