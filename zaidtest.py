@@ -47,7 +47,6 @@ def functiezaid2():
 
         folium.Marker([latitude, longitude], tooltip=tooltip).add_to(museum_map)
         museum_map.save('museum_map.html') 
-functiezaid2()
 
 
 def functie_zoek_locatie_in_CSV(invoer):
@@ -76,8 +75,6 @@ def functie_zoek_locatie_in_CSV(invoer):
    
 
     return result
-resultaat = functie_zoek_locatie_in_CSV()
-print(resultaat)
     
 
 
