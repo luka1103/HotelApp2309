@@ -1,12 +1,12 @@
 from flask import Flask
 from flask_cors import CORS, cross_origin
 import felixprobeersels
-import lukaprobeersels
+import filterMarktenOpArtikelen
 import jeroenprobeer
 import zaidtest
 import searchRestaurants
-import marktKaart
-from flask import render_template
+import infoPerBestand
+from flask import render_template, jsonify, request
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -23,16 +23,20 @@ def helloWorld():
 def methodefelix(eengegeven):
     return felixprobeersels.functiefelix(eengegeven)
 
-@app.route("/luka/<mijngegeven>")
+@app.route("/markten/<artikelen>")
 @cross_origin()
-def methodeluka(mijngegeven):
-    return lukaprobeersels.functieluka(mijngegeven)
+def filterMarkten(artikelen):
+    return filterMarktenOpArtikelen.filter(artikelen)
 
 @app.route("/marktenkaart")
 @cross_origin()
-def methodemarktkaart():
-    marktKaart.marktKaart()
+def marktKaart():
     return render_template('markten_kaart.html')
+
+@app.route("/alleinfo/<bestandsnaam>")
+@cross_origin()
+def methodeAlleInfo(bestandsnaam):
+    return infoPerBestand.alleInfo(bestandsnaam)
 
 @app.route("/jeroen/<mijngegeven>")
 @cross_origin()
@@ -49,10 +53,10 @@ def methodejeroen2(invoer):
 def methodejeroen3(mijngegeven):
     return searchRestaurants.filter_and_dropdown(mijngegeven)
 
-@app.route("/Zaid2/<mijngegeven>")
+@app.route("/Zaid2")
 @cross_origin()
-def functiezaid2(mijngegeven):
-    return zaidtest.functiezaid2(mijngegeven)
+def functiezaid2():
+    return zaidtest.functiezaid2()
 
 @app.route("/Zaid3/<mijngegeven>")
 @cross_origin()
@@ -68,3 +72,8 @@ def functiezaid4index(mijngegeven):
 @cross_origin()
 def fuctiezaid5zoek_in_csv(mijngegeven):
     return zaidtest.functiezaid4index(mijngegeven)
+
+@app.route("/ZoekLocatieMusea/<invoer>")
+@cross_origin()
+def zoek_locatie_in_CSV():
+    return zaidtest.functie_zoek_locatie_in_CSV()
