@@ -66,5 +66,5 @@ def fuctiezaid5zoek_in_csv(mijngegeven):
 
 @app.route("/ZoekLocatieMusea/<invoer>")
 @cross_origin()
-def zoek_locatie_in_CSV():
-    return zaidtest.functie_zoek_locatie_in_CSV()
+def zoek_locatie_in_CSV(invoer):
+    return zaidtest.functie_zoek_locatie_in_CSV(invoer)
