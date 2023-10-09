@@ -61,6 +61,8 @@ def functie_zoek_locatie_in_CSV(invoer):
      
         title = str(row.get("Title", "")).lower()
         Short_description = str(row.get("Shortdescription", "")).lower()
+       
+        
 
         if any(keyword in title or keyword in Short_description for keyword in keywords):
             matched_rows.append(index)
