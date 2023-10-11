@@ -1,9 +1,6 @@
-from flask import Flask
-from flask_cors import CORS, cross_origin
-import felixprobeersels
-import filterMarktenOpArtikelen
-import jeroenprobeer
-import zaidtest
-import searchRestaurants
-import infoPerBestand
-from flask import render_template, jsonify, request
+flask
+flask_cors
+pandas
+folium
+matplotlib
+
