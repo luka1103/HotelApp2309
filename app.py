@@ -53,6 +53,12 @@ def methodejeroen2(invoer):
 def methodejeroen3(mijngegeven):
     return searchRestaurants.filter_and_dropdown(mijngegeven)
 
+@app.route("/jeroen4/")
+@cross_origin()
+def methodejeroen4():
+    result = searchRestaurants.restaurantNumbers(rating_treshold=4.0)
+    return result
+
 @app.route("/Zaid2")
 @cross_origin()
 def functiemaakmap():
