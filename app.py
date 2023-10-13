@@ -61,7 +61,7 @@ def methodejeroen4():
 
 @app.route("/Zaid2")
 @cross_origin()
-def functiezaid2():
+def functiemaakmap():
     return zaidtest.functiezaid2()
 
 @app.route("/Zaid3/<mijngegeven>")
@@ -71,12 +71,12 @@ def functiezaid3zoek(mijngegeven):
 
 @app.route("/Zaid4/<mijngegeven>")
 @cross_origin()
-def functiezaid4index(mijngegeven):
+def functiemap(mijngegeven):
     return zaidtest.functiezaid4index(mijngegeven)
 
 @app.route("/Zaid5/<mijngegeven>")
 @cross_origin()
-def fuctiezaid5zoek_in_csv(mijngegeven):
+def fuctiepointerinfo(mijngegeven):
     return zaidtest.functiezaid4index(mijngegeven)
 
 @app.route("/ZoekLocatieMusea/<invoer>")
